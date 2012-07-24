@@ -1,0 +1,2263 @@
+<!--SDMX_sitio_standalone: Armando Humberto Cazarin Meza-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	SDMX
+</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" type="text/css" href="css/estilos/encabezado.css" />
+        <link rel="stylesheet" type="text/css" href="css/estilos/Navegacion.css" />
+        <link rel="stylesheet" type="text/css" href="css/estilos/Economicos.css" />
+        <link rel="stylesheet" type="text/css" href="css/estilos/Poblacion.css" />
+        <link rel="stylesheet" type="text/css" href="highslide/highslide.css" />
+        <link type="text/css" href="css/jquery-ui-1.8.1.custom.css" rel="Stylesheet" />
+        <link rel="stylesheet" type="text/css" href="inegi/contenidos/servicios/SDMX/css/shCore.css" />
+        <link rel="stylesheet" type="text/css" href="inegi/contenidos/servicios/SDMX/css/shCoreDefault.css" />
+        <link rel="stylesheet" type="text/css" href="css/showLoading.css" />
+	
+        <script type="text/javascript" src="js/sdmx/highstock/jquery-1.4.2.min.js"></script>
+        <script type="text/javascript" src="js/sdmx/highstock/jquery-ui-1.8.1.custom.min.js"></script>
+        <script type="text/javascript" src="js/sdmx/highstock/jsr_class.js"></script>
+        <script type="text/javascript" src="js/sdmx/highstock/dsds.js"></script>
+        <script type="text/javascript" src="js/sdmx/highstock/codelist.js"></script>
+        <script type="text/javascript" src="js/sdmx/highstock/flujos_infodisp.js"></script>
+        <script type="text/javascript" src="js/sdmx/highstock/core.js"></script>
+        <script language="javascript" src='js/sdmx/highstock/Navegacion.js'></script>   
+        <script type="text/javascript" src="js/sdmx/highstock/jquery.showLoading.js"><!-- // --></script>
+        <script type="text/javascript" src="syntaxhighlighter/shCore.js"></script>
+        <script type="text/javascript" src="syntaxhighlighter/shBrushJScript.js"></script>
+        <script type="text/javascript" src="highslide/highslide-with-html.js"></script>
+        <script type="text/javascript">
+            SyntaxHighlighter.all();
+        </script>
+
+
+	
+   <!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012-->
+<!--Validacion de versión de explorer-->
+<script type="text/javascript">
+function is_navegador(refer)
+{
+	var ua = [];
+	var trident = " Trident/5.0"
+		var flag_trident = false
+		if (navigator.appName == 'Microsoft Internet Explorer')
+		{
+			var uatemp = navigator.userAgent;
+			ua = uatemp.split(";")
+				for (var i = 0; i < ua.length; i++)
+				{
+					if (ua[i] == trident || ua[i] == " Trident/5.0)")
+					{
+						flag_trident = true
+							break;
+					}
+				}
+				if (flag_trident != true)
+					alert("Esta aplicación no opera en versiones de Internet Explorer 8 o anteriores por lo que, si desea acceder a ella, se sugiere descargar: \nInternet Explorer 9: \nhttp://windows.microsoft.com/es-MX/internet-explorer/downloads/ie\n\nU otro navegador:\nFirefox:\nhttp://www.mozilla.org/en-US/firefox/new/\n\nChrome:\nhttp://www.google.com.mx/chrome/index.html?hl=es&brand=CHNG&utm_source=es-hpp&utm_medium=hpp&utm_campaign=es")
+                                else
+					{
+						if (refer == 'dsd_display')
+						{
+							window.open('dsds.aspx');
+						}
+						if (refer == 'Prototipo1_g')
+						{
+							window.open('Fusioncharts_generica.aspx');
+						}
+						if (refer == 'Prototipo1')
+						{
+							window.open('Fusioncharts_nogenerico_lineas.aspx');
+						}
+						if (refer == 'Prototipo2')
+						{
+							window.open('Fusioncharts_nogenerico_areas.aspx');
+						}
+						if (refer == 'Prototipo3')
+						{
+							if (navigator.appName == 'Microsoft Internet Explorer')
+								alert("Este prototipo no funciona en Internet Explorer")
+                                                        else
+								{
+									window.open('protovis_finance.aspx');
+								}
+						}
+						if (refer == 'Prototipo4')
+						{
+							if (navigator.appName == 'Microsoft Internet Explorer')
+								alert("Este prototipo no funciona en Internet Explorer")
+                                                        else
+								{
+									window.open('protovis_focuscontext.aspx');
+								}
+						}
+						if (refer == 'Prototipo5')
+						{
+							window.open('motionchart.aspx');
+						}
+					}
+		}
+		else
+		{
+			if (refer == 'dsd_display')
+			{
+				window.open('dsds.aspx');
+			}
+			if (refer == 'Prototipo1_g')
+			{
+				window.open('Fusioncharts_generica.aspx');
+			}
+			if (refer == 'Prototipo1')
+			{
+				window.open('Fusioncharts_nogenerico_lineas.aspx');
+			}
+			if (refer == 'Prototipo2')
+			{
+				window.open('Fusioncharts_nogenerico_areas.aspx');
+			}
+			if (refer == 'Prototipo3')
+			{
+				if (navigator.appName == 'Microsoft Internet Explorer')
+					alert("Este prototipo no funciona en Internet Explorer")
+                                else
+					{
+						window.open('protovis_finance.aspx');
+					}
+			}
+			if (refer == 'Prototipo4')
+			{
+				if (navigator.appName == 'Microsoft Internet Explorer')
+					alert("Este prototipo no funciona en Internet Explorer")
+                                else
+					{
+						window.open('protovis_focuscontext.aspx');
+					}
+			}
+			if (refer == 'Prototipo5')
+			{
+				window.open('motionchart.aspx');
+			}
+		}
+}
+ </script>  
+
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012-->    
+<!--Apartado Informacion Disponible Estructuras y catalogos-->
+<!--Boton descargar keyfamily-->
+<script type="text/javascript">
+	$(document).ready(function ()
+		{
+			$("#boton_descargar").click(function ()
+				{
+					if ($("#camposelector3").find(':selected').val() == '0')
+					{
+						alert("No has seleccionado un DSD para su descarga")
+					}
+					else
+					{
+						var dsd_geted = document.getElementById("url_definida_estr").value
+							window.open(dsd_geted)
+					}
+				}
+			);
+		}
+	);
+ </script>  
+
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012-->
+<!--Boton descargar DSD-->
+ <script type="text/javascript">
+	$(document).ready(function ()
+		{
+			$("#boton_descargar_ref").click(function ()
+				{
+					if ($("#camposelector3").find(':selected').val() == '0')
+					{
+						alert("No has seleccionado un DSD para su descarga")
+					}
+					else
+					{
+						var dsd_geted = document.getElementById("url_definida_estr").value
+							window.open(dsd_geted + "?references=shallow")
+					}
+				}
+			);
+		}
+	);
+ </script>  
+   
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012-->  
+<!--Selector Consultar DSD-->
+<script type="text/javascript">
+	$(document).ready(function ()
+		{
+			$("#camposelector3").change(function (event)
+				{
+					if (document.getElementById("unemp_table"))
+					{
+						var un = document.getElementById("unemp_table")
+							var father = un.parentNode;
+						father.removeChild(un);
+						var unemp_table_div = document.createElement("div")
+							unemp_table_div.id = "unemp_table"
+							unemp_table_div.setAttribute("style", "width:200px;margin: 2em")
+							document.getElementById("container_unemp_table").appendChild(unemp_table_div)
+					}
+					else
+					{
+						var unemp_table_div = document.createElement("div")
+							unemp_table_div.id = "unemp_table"
+							unemp_table_div.setAttribute("style", "width:200px; margin: 2em")
+							document.getElementById("container_unemp_table").appendChild(unemp_table_div)
+					}
+					var dsd12 = $("#camposelector3").find(':selected').val();
+					var url = 'http://www.sdmx.snieg.mx/sistemas/sdmx/'  + 'restsdmx/DataStructure/ALL/' + dsd12 + '/ALL'
+						document.getElementById("url_definida_estr").value = url;
+				}
+			);
+		}
+	);
+
+ </script>          
+
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012-->  
+<!--Apartado Informacion disponible Flujos de datos-->
+<!--Selector de flujos-->
+<script type="text/javascript">
+var URL_DSD_CONSULTADO;
+var DSD_CONSULTADO;
+var FLUJO_CONSULTADO_INFODISP;
+var FLUJO_CONSUL, FLUJO_AGENCY;
+var APLICAR_CRITERIOS = false;
+var URL_FIJA_FLUJO_DATOS_ALL
+$(document).ready(function ()
+	{
+		$("#camposelector_flujo").change(function (event)
+			{
+				document.getElementById("boton_descargarxml").checked = false
+					document.getElementById("boton_descargarjson").checked = false
+					document.getElementById("boton_descargarjsonp").checked = false
+					document.getElementById("boton_descargarcsv").checked = false
+                                        document.getElementById("boton_descargardspl").checked = false
+					document.getElementById("generic").checked = false;
+				document.getElementById("compact").checked = true;
+				APLICAR_CRITERIOS = false
+					if (document.getElementById("url_filtrada") == null)
+					{
+						var nm = document.getElementById("container_urlfiltrada")
+							var urlfiltradaagain = document.createElement("div")
+							urlfiltradaagain.id = "url_filtrada";
+						nm.appendChild(urlfiltradaagain);
+					}
+					else
+					{
+						var yy = document.getElementById("url_filtrada")
+							var padre2 = yy.parentNode;
+						padre2.removeChild(yy)
+						var nm = document.getElementById("container_urlfiltrada")
+							var urlfiltradaagain = document.createElement("div")
+							urlfiltradaagain.id = "url_filtrada";
+						nm.appendChild(urlfiltradaagain);
+					}
+					var spancreateagain = document.createElement("span")
+					spancreateagain.id = "url_base"
+					urlfiltradaagain.appendChild(spancreateagain)
+					var x = document.getElementById("tabs")
+					var padre = x.parentNode
+					padre.removeChild(x)
+					var m = document.getElementById("container")
+					var tabs = document.createElement("div")
+					tabs.id = "tabs"
+					m.appendChild(tabs)
+					var ul = document.createElement("ul")
+					tabs.appendChild(ul);
+				var flujo = $("#camposelector_flujo").find(':selected').val();
+				var flujo_consultado = 'http://www.sdmx.snieg.mx/sistemas/sdmx/' + 'restsdmx/Dataflow/ALL/' + flujo + '/ALL' + '?references=shallow&alt=json&callback=flujo_consul'
+					bObj = new JSONscriptRequest(flujo_consultado);
+				bObj.buildScriptTag();
+				bObj.addScriptTag();
+				//bObj.removeScriptTag();
+			}
+		);
+	}
+);
+
+function flujo_consul(obj)
+{
+	var flujo = obj.RegistryInterface.QueryStructureResponse['registry:Dataflows']['structure:Dataflow'];
+	var flujo_select = $("#camposelector_flujo").find(':selected').val();
+	this.FLUJO_CONSUL = flujo_select
+		var agency_flujo = flujo['@agencyID'];
+	this.FLUJO_AGENCY = agency_flujo
+		var url_flujoconsul = 'http://www.sdmx.snieg.mx/sistemas/sdmx/' + 'restsdmx/Data/' + flujo_select + '/' + agency_flujo + '?key=ALL'
+		this.FLUJO_CONSULTADO_INFODISP = url_flujoconsul
+		var dsd_asociado = flujo['structure:KeyFamilyRef']['structure:KeyFamilyID']
+		this.DSD_CONSULTADO = dsd_asociado
+		var agency_dsd = flujo['structure:KeyFamilyRef']['structure:KeyFamilyAgencyID']
+		var url_dsd = 'http://www.sdmx.snieg.mx/sistemas/sdmx/'+'restsdmx/DataStructure/' + agency_dsd + '/' + dsd_asociado + '/' + 'ALL'
+		this.URL_DSD_CONSULTADO = url_dsd;
+	var dsd_components = obj.RegistryInterface.QueryStructureResponse['registry:KeyFamilies']['structure:KeyFamily']['structure:Components']['structure:Dimension'];
+	$.each(dsd_components, function (o, t)
+		{
+			if (o == 0)
+			{
+				var span = document.createElement("span")
+					span.setAttribute("id", "select-" + o)
+					var spanurl = document.createElement("span")
+					spanurl.textContent = "http://www.sdmx.snieg.mx/sistemas/sdmx/restsdmx/Data/" + FLUJO_CONSUL + "/" + FLUJO_AGENCY + "?key="
+					document.getElementById("url_filtrada").setAttribute("style", "border:1px solid #AAAAAA;overflow-y:auto;width:400px;height:100px; word-wrap:break-word")
+					document.getElementById("url_base").appendChild(spanurl)
+					document.getElementById("url_filtrada").appendChild(span)
+			}
+			else
+			{
+				var span = document.createElement("span")
+					span.setAttribute("id", "select-" + o)
+					var spanpunto = document.createElement("span")
+					spanpunto.textContent = "."
+					document.getElementById("url_filtrada").appendChild(spanpunto)
+					document.getElementById("url_filtrada").appendChild(span)
+			}
+		}
+	);
+	if (document.getElementById("format_descarga") != null)
+	{
+		var spanformatdelete = document.getElementById("format_descarga")
+			var padrespanformatdelete = spanformatdelete.parentNode
+			padrespanformatdelete.removeChild(spanformatdelete);
+		document.getElementById("boton_descargarxml").checked = true
+			var spanformat = document.createElement("span")
+			spanformat.id = "format_descarga"
+			spanformat.innerHTML = "&format=compact"
+			document.getElementById("url_filtrada").appendChild(spanformat)
+	}
+	else
+	{
+		var spanformat = document.createElement("span")
+			spanformat.id = "format_descarga"
+			spanformat.innerHTML = "&format=compact"
+			document.getElementById("url_filtrada").appendChild(spanformat)
+	}
+}
+</script>  
+
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012--> 
+<!--Modificado:16/03/2012-->
+<!--Boton Filtrar consulta-->
+<script type="text/javascript">
+var DIMENSIONES;
+$(document).ready(function ()
+	{
+		$("#criteria").click(function ()
+			{
+				if ($(".ui-tabs-panel").size() - 1 == -1)
+				{
+					document.getElementById("boton_descargarxml").checked = false
+					document.getElementById("boton_descargarjson").checked = false
+					document.getElementById("boton_descargarjsonp").checked = false
+					document.getElementById("boton_descargarcsv").checked = false
+					document.getElementById("boton_descargardspl").checked = false
+					document.getElementById("generic").checked = false
+					document.getElementById("compact").checked = false
+						if (document.getElementById("format_descarga"))
+						{
+							var spanformatdelete = document.getElementById("format_descarga")
+							var padrespanformatdelete = spanformatdelete.parentNode
+							padrespanformatdelete.removeChild(spanformatdelete);
+						}
+						if (FLUJO_CONSULTADO_INFODISP != null)
+						{
+							if (document.getElementById("format_descarga") != null)
+							{
+								var spanformatdelete = document.getElementById("format_descarga")
+								var padrespanformatdelete = spanformatdelete.parentNode
+								padrespanformatdelete.removeChild(spanformatdelete);
+								document.getElementById("boton_descargarxml").checked = true
+								var spanformat = document.createElement("span")
+								spanformat.id = "format_descarga"
+								spanformat.innerHTML = "&format=compact"
+								document.getElementById("url_filtrada").appendChild(spanformat)
+							}
+							else
+							{
+								var spanformat = document.createElement("span")
+								spanformat.id = "format_descarga"
+								spanformat.innerHTML = "&format=compact"
+								document.getElementById("url_filtrada").appendChild(spanformat)
+							}
+							$('#activity_pane').showLoading();
+                                                                APLICAR_CRITERIOS = true
+								var url_dsd_references = 'http://www.sdmx.snieg.mx/sistemas/sdmx/' + 'restsdmx/DataStructure/ALL/' + DSD_CONSULTADO + '/ALL' + '?references=shallow&alt=json&callback=flujo_filtrado'
+								bObj = new JSONscriptRequest(url_dsd_references);
+                                                                bObj.buildScriptTag();
+                                                                bObj.addScriptTag();
+                                                                //bObj.removeScriptTag();
+						}
+						else
+						{
+							alert("No has seleccionado un flujo para descargar")
+						}
+				}
+				else
+				{
+					alert("Ya estas dentro de los criterios del flujo seleccionado")
+				}
+			});
+	});
+
+function flujo_filtrado(obj2)
+{
+	document.getElementById("compact").checked = true
+		var dsd_components = null
+		var dsd_components = obj2.RegistryInterface.QueryStructureResponse['registry:KeyFamilies']['structure:KeyFamily']['structure:Components']['structure:Dimension'];
+	this.DIMENSIONES = dsd_components;
+	var codelists = obj2.RegistryInterface.QueryStructureResponse['registry:CodeLists']['structure:CodeList'];
+	var obj_dimen_refer =
+	{
+		dimensiones_references_codelist : []
+	}
+	$.each(dsd_components, function (a, d)
+		{
+			var obj_all =
+			{
+				dimension : d['@conceptRef'],
+				codelist : d['@codelist'],
+				codelistAgency : d['@codelistAgency']
+			}
+			obj_dimen_refer.dimensiones_references_codelist.push(obj_all)
+		}
+	);
+	if ($(".ui-tabs-panel").size() - 1 == -1)
+	{
+		$.each(obj_dimen_refer.dimensiones_references_codelist, function (q, w)
+			{
+				var $tabs = $("#tabs").tabs(
+						{
+							add : function (event, ui)
+							{
+								setcodigos(codelists, w.codelist, w.codelistAgency, q, ui, "tabs-" + q);
+							}
+						}
+					);
+				$tabs.tabs("add", "#tabs-" + q, w.dimension);
+				$tabs = null
+			}
+		);
+	}
+	document.getElementById("url_filtrada").setAttribute("style", "border:1px solid #AAAAAA;overflow-y:auto;width:400px;height:100px; word-wrap:break-word");
+	$('#activity_pane').hideLoading();
+}
+
+function selectdeselectfuncion(idtabs, flagcheck)
+{
+	if (flagcheck)
+	{
+		resetkey(idtabs);
+		$('#' + idtabs + " " + 'input[type=checkbox]').each(function (fff, ggg)
+			{
+				ggg.checked = true
+			}
+		);
+	}
+	else
+	{
+            resetkey(idtabs);
+		$('#' + idtabs + " " + 'input[type=checkbox]').each(function (fff, ggg)
+			{
+				ggg.checked = false
+			}
+		);
+	}
+}
+
+function setcodigos(obj3, codelist, codelistagency, id_number, ui, idtabs)
+{
+	var br = document.createElement("br")
+		var select_deselect_dimensiones = document.createElement("input");
+	select_deselect_dimensiones.id = "select_deselect_dimensiones";
+	select_deselect_dimensiones.setAttribute("type", "checkbox");
+	select_deselect_dimensiones.setAttribute("name", "sel_desel")
+	select_deselect_dimensiones.onclick = function ()
+	{
+		selectdeselectfuncion(idtabs, this.checked)
+	}
+	document.getElementById("tabs-" + id_number).appendChild(select_deselect_dimensiones);
+	$(ui.panel).append("SeleccionarTodo/DeseleccionarTodo" + "<br></br>");
+	var indcheckboxes = getindice(idtabs);
+	$.each(obj3, function (v, c)
+		{
+			if (codelist == c['@id'] && codelistagency == c['@agencyID'])
+			{
+				if (c['structure:Code'].length > 1)
+				{
+					$.each(c['structure:Code'], function (h, j)
+						{
+							var checkbox = document.createElement("input");
+							checkbox.id = "checkbox" + h;
+							checkbox.setAttribute("type", "checkbox");
+							checkbox.setAttribute("name", "cajas-" + indcheckboxes);
+							checkbox.value = j['@value'];
+							checkbox.onclick = function ()
+							{
+								if (checkbox.checked == true)
+									seleccion(idtabs);
+								else
+									seleccion(idtabs);
+							};
+							document.getElementById("tabs-" + id_number).appendChild(checkbox);
+							$(ui.panel).append(j['@value'] + "-" + getdescription(j['structure:Description']) + "<br></br>");
+						}
+					);
+				}
+				else
+				{
+					var checkbox = document.createElement("input");
+					checkbox.id = "checkbox0";
+					checkbox.setAttribute("type", "checkbox");
+					checkbox.setAttribute("name", "cajas-" + indcheckboxes);
+					checkbox.value = c['structure:Code']['@value'];
+					checkbox.onclick = function ()
+					{
+						if (checkbox.checked == true)
+							seleccion(idtabs);
+						else
+							seleccion(idtabs);
+					};
+					document.getElementById("tabs-" + id_number).appendChild(checkbox);
+					$(ui.panel).append(c['structure:Code']['@value'] + "-" + getdescription(c['structure:Code']['structure:Description']) + "<br></br>");
+				}
+			}
+			else
+				return
+		}
+	);
+	$('input[type=checkbox]').each(function (fff, ggg)
+		{
+			ggg.checked = true
+		}
+	);
+}
+
+function getdescription(descrip)
+{
+	var descripcion = ""
+		if (descrip.length > 1)
+                    {
+			$.each(descrip, function (f, g)
+				{
+					if (g['@xml:lang'] == 'en')
+						descripcion = g['#text']
+                                            else
+								return
+				});
+                    }
+		else
+                    {
+			descripcion = descrip['#text']
+                    }
+	return descripcion
+}
+
+function seleccion(idtab)
+{
+	var index = "";
+	var ind = "";
+	index = getindice(idtab);
+	$.each(DIMENSIONES, function (d, r)
+		{
+			if (index == d)
+			{
+				ind = d
+                                return false
+			}
+			else
+				return
+		});
+	$('#select-'+ind).text($('input[name=cajas-'+ind+']').serialize());
+}
+
+function getindice(cadena)
+{
+	var ultimo;
+	var cad = cadena.split("-");
+	ultimo = cad[1]
+	return ultimo
+}
+
+function resetkey(iddimension)
+{
+	var indexspan = getindice(iddimension);
+	document.getElementById("select-" + indexspan).innerHTML = "";
+}
+</script>  
+
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012--> 
+<!--Dialog Informacion disponible esto es el boton DSD--> 
+<script type="text/javascript">
+	$(function ()
+		{
+			$("#DSD").click(function ()
+				{
+					if (URL_DSD_CONSULTADO != null)
+					{
+						var cajita_dsd_flujo = $('<div>' + URL_DSD_CONSULTADO + '<p>' + 'El DSD incluye todos los componentes SDMX como catálogos, mientras que el "KeyFamily" solamente traerá la definición de la estructura de los datos' + '</p>' + '</div>');
+						cajita_dsd_flujo.dialog(
+							{
+								show : "blind",
+								hide : "explode",
+								title : "DSD correspondiente al flujo seleccionado",
+								width : 350,
+								height : 200,
+								buttons :
+								{
+									"Descargar KeyFamily" : function ()
+									{
+										window.open(URL_DSD_CONSULTADO);
+									},
+									"Descargar DSD" : function ()
+									{
+										window.open(URL_DSD_CONSULTADO + "?references=shallow");
+									}
+								}
+							}
+						);
+					}
+					else
+					{
+						alert("Debes seleccionar un flujo");
+					}
+				}
+			);
+		}
+	);
+</script>  
+
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012--> 
+<!--Dialog para el boton instrucciones para filtrar consulta-->
+<script type="text/javascript">
+	$(function ()
+		{
+			$("#dialog").dialog(
+				{
+					autoOpen : false,
+					show : "blind",
+					hide : "explode",
+					title : "Instrucciones para filtra consulta"
+				}
+			);
+			$("#informacion_filtros").click(function ()
+				{
+					$("#dialog").dialog("open");
+					return false;
+				}
+			);
+		}
+	);
+</script>  
+
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012--> 
+<!--Dialog para el boton Descargar datos agregando botones Regresar y Continuar SIN CRITERIOS-->
+<script type="text/javascript">
+    function sincriterios(url,alerts){
+    $(function() {
+        var descarga_flujos_sincriterios = $('<div>'+alerts+'</div>');
+        descarga_flujos_sincriterios.dialog({
+			show: "blind",
+			hide: "explode",
+                        title:"Descarga de datos",
+                        width:350,
+                        height:200,
+                        buttons: {
+				"Continuar": function() {
+					window.open(url);
+                                        $( this ).dialog( "close" );
+				},"Regresar": function() {
+					$( this ).dialog( "close" );
+				}
+			}
+		});  	
+	});
+        }
+</script>
+
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012--> 
+<!--Dialog para la descarga de flujos agregando botones Regresar y continuar CON CRITERIOS-->
+<script type="text/javascript">
+function concriterios(url, alerts)
+{
+	$(function ()
+		{
+			var descarga_flujos_concriterios = $('<div>' + alerts + '</div>');
+			descarga_flujos_concriterios.dialog(
+				{
+					show : "blind",
+					hide : "explode",
+					title : "Descarga de datos",
+					width : 350,
+					height : 200,
+					buttons :
+					{
+						"Continuar" : function ()
+						{
+							window.open(url);
+							$(this).dialog("close");
+						},
+						"Regresar" : function ()
+						{
+							$(this).dialog("close");
+						}
+					}
+				}
+			);
+		}
+	);
+}
+</script>  
+
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012--> 
+<!--Boton descargar datos-->
+<script type="text/javascript">
+	$(document).ready(function ()
+		{
+			$("#descargar_datos").click(function ()
+				{
+					if (FLUJO_CONSULTADO_INFODISP == null)
+					{
+						alert("No has seleccionado un flujo para descargar")
+					}
+					else
+					{
+						if ($('#generic').is(':checked') == true || $('#compact').is(':checked') == true)
+						{
+							if (document.getElementById("boton_descargarxml").checked == true || document.getElementById("boton_descargarjson").checked == true || document.getElementById("boton_descargarjsonp").checked == true || document.getElementById("boton_descargarcsv").checked == true || document.getElementById("boton_descargardspl").checked == true)
+							{
+								if (APLICAR_CRITERIOS != false)
+								{
+									geturldinamica();
+								}
+								else
+								{
+									var container = document.getElementById("url_filtrada");
+									var flag_urlALL = false
+										var key_url = container.childNodes[0].textContent;
+									for (var i = 0; i < container.childNodes.length; i++)
+									{
+										var child = container.childNodes[i].textContent;
+										if (child == "" && flag_urlALL == false)
+										{
+											continue;
+										}
+										else
+										{
+											if (i != 0 && child != "." && i < container.childNodes.length - 1)
+											{
+												key_url += child
+												flag_urlALL = true;
+											}
+											else
+											{
+												if (i != 0)
+													key_url += child 
+                                                                                                else
+														continue
+											}
+										}
+									}
+									var formato = ""
+										$('input[name=formatos]:radio').each(function (tt, ee)
+											{
+												if (ee.checked == true)
+												{
+													formato = ee.value;
+													return false;
+												}
+												else
+												{
+													return
+												}
+											}
+										);
+									switch (formato)
+									{
+									case "xml":
+										if (FLUJO_CONSUL == "DF_COMTRADE")
+										{
+											var alertxml = 'El flujo completo de COMTRADE por su gran tamaño tarda aproximadamente 4-8 min. Por ello, le recomendamos:<br/>1). Regresar y aplicar criterios para filtrar la consulta.<br/>2). Si continua con la descarga completa deberá seleccionar "Guardar archivo" para posteriormente abrirlo con algun editor de archivos XML ó editores de textos, ya que el navegador web no podrá "Abrir el archivo" por su tamaño.'
+												sincriterios(key_url, alertxml)
+										}
+										else
+										{
+											var alertxml2 = "Filtros sin seleccionar, se realizará la descarga completa de datos"
+												sincriterios(key_url, alertxml2)
+										}
+										break
+									case "json":
+										if (FLUJO_CONSUL == "DF_COMTRADE")
+										{
+											var alertjson = 'El flujo completo de COMTRADE por su gran tamaño tarda aproximadamente 4-8 min. Por ello, le recomendamos:<br/>1). Regresar y aplicar criterios para filtrar la consulta.<br/>2). Si continua con la descarga completa deberá seleccionar "Guardar archivo" para posteriormente abrirlo con algun editor de archivos XML ó editores de textos, ya que el navegador web no podrá "Abrir el archivo" por su tamaño.'
+												sincriterios(key_url, alertjson)
+										}
+										else
+										{
+											var alertjson2 = "Filtros sin seleccionar, se realizará la descarga completa de datos"
+												sincriterios(key_url, alertjson2)
+										}
+										break
+									case "jsonp":
+										if (FLUJO_CONSUL == "DF_COMTRADE")
+										{
+											var alertjsonp = 'El flujo completo de COMTRADE por su gran tamaño tarda aproximadamente 4-8 min. Por ello, le recomendamos:<br/>1). Regresar y aplicar criterios para filtrar la consulta.<br/>2). Si continua con la descarga completa deberá seleccionar "Guardar archivo" para posteriormente abrirlo con algun editor de archivos XML ó editores de textos, ya que el navegador web no podrá "Abrir el archivo" por su tamaño.'
+												sincriterios(key_url, alertjsonp)
+										}
+										else
+										{
+											var alertjsonp2 = "Filtros sin seleccionar, se realizará la descarga completa de datos"
+												sincriterios(key_url, alertjsonp2)
+										}
+										break
+									case "csv":
+										if (FLUJO_CONSUL == "DF_COMTRADE")
+										{
+											var alertcsv = 'El flujo completo de COMTRADE por su gran tamaño tarda aproximadamente 4-8 min. Por ello, le recomendamos:<br/>1). Regresar y aplicar criterios para filtrar la consulta.<br/>2). Si continua con la descarga completa deberá seleccionar "Guardar archivo" para posteriormente abrirlo con algun editor de archivos XML ó editores de textos, ya que el navegador web no podrá "Abrir el archivo" por su tamaño.'
+												sincriterios(key_url, alertcsv)
+										}
+										else
+										{
+											var alertcsv2 = "Filtros sin seleccionar, se realizará la descarga completa de datos"
+												sincriterios(key_url, alertcsv2)
+										}
+										break
+									case "dspl":
+										if (FLUJO_CONSUL == "DF_COMTRADE")
+										{
+											var alertdspl = 'El flujo completo de COMTRADE por su gran tamaño tarda aproximadamente 4-8 min. Por ello, le recomendamos:<br/>1). Regresar y aplicar criterios para filtrar la consulta.<br/>2). Si continua con la descarga completa deberá seleccionar "Guardar archivo" para posteriormente abrirlo con algun editor de archivos XML ó editores de textos, ya que el navegador web no podrá "Abrir el archivo" por su tamaño.'
+												sincriterios(key_url, alertdspl)
+										}
+										else
+										{
+											var alertdspl2 = "Filtros sin seleccionar, se realizará la descarga completa de datos"
+												sincriterios(key_url, alertdspl2)
+										}
+										break
+									}
+								}
+							}
+							else
+							{
+								alert("Debes seleccionar un tipo de archivo")
+							}
+						}
+						else
+						{
+							alert("Seleccionar generic ó compact")
+						}
+					}
+				}
+			);
+		}
+	);
+</script>  
+
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012--> 
+<!--Funcion de los radio button con name formatos para descargar con criterios-->
+<script type="text/javascript">
+function geturldinamica()
+{
+	var container = document.getElementById("url_filtrada");
+	var flag_urlALL = false
+		var key_url = container.childNodes[0].textContent;
+	for (var i = 0; i < container.childNodes.length; i++)
+	{
+		var child = container.childNodes[i].textContent;
+		if (child == "" && flag_urlALL == false)
+		{
+			continue;
+		}
+		else
+		{
+			if (i != 0 && child != "." && i < container.childNodes.length - 1)
+			{
+				key_url += child
+				flag_urlALL = true;
+			}
+			else
+			{
+				if (i != 0)
+					key_url += child 
+                                else
+						continue
+			}
+		}
+	}
+	if (flag_urlALL == false)
+	{
+		var formato = ""
+			$('input[name=formatos]:radio').each(function (tt, ee)
+				{
+					if (ee.checked == true)
+					{
+						formato = ee.value;
+						return false;
+					}
+					else
+					{
+						return
+					}
+				}
+			);
+		switch (formato)
+		{
+		case "xml":
+			if (FLUJO_CONSUL == "DF_COMTRADE")
+			{
+				var alertxml = 'El flujo completo de COMTRADE por su gran tamaño tarda aproximadamente 4-8 min. Por ello, le recomendamos:<br/>1). Regresar y aplicar criterios para filtrar la consulta.<br/>2). Si continua con la descarga completa deberá seleccionar "Guardar archivo" para posteriormente abrirlo con algun editor de archivos XML ó editores de textos, ya que el navegador web no podrá "Abrir el archivo" por su tamaño.'
+					sincriterios(key_url, alertxml)
+			}
+			else
+			{
+				var alertxml2 = "Filtros sin seleccionar, se realizará la descarga completa de datos"
+					sincriterios(key_url, alertxml2)
+			}
+			break
+		case "json":
+			if (FLUJO_CONSUL == "DF_COMTRADE")
+			{
+				var alertjson = 'El flujo completo de COMTRADE por su gran tamaño tarda aproximadamente 4-8 min. Por ello, le recomendamos:<br/>1). Regresar y aplicar criterios para filtrar la consulta.<br/>2). Si continua con la descarga completa deberá seleccionar "Guardar archivo" para posteriormente abrirlo con algun editor de archivos XML ó editores de textos, ya que el navegador web no podrá "Abrir el archivo" por su tamaño.'
+					sincriterios(key_url, alertjson)
+			}
+			else
+			{
+				var alertjson2 = "Filtros sin seleccionar, se realizará la descarga completa de datos"
+					sincriterios(key_url, alertjson2)
+			}
+			break
+		case "jsonp":
+			if (FLUJO_CONSUL == "DF_COMTRADE")
+			{
+				var alertjsonp = 'El flujo completo de COMTRADE por su gran tamaño tarda aproximadamente 4-8 min. Por ello, le recomendamos:<br/>1). Regresar y aplicar criterios para filtrar la consulta.<br/>2). Si continua con la descarga completa deberá seleccionar "Guardar archivo" para posteriormente abrirlo con algun editor de archivos XML ó editores de textos, ya que el navegador web no podrá "Abrir el archivo" por su tamaño.'
+					sincriterios(key_url, alertjsonp)
+			}
+			else
+			{
+				var alertjsonp2 = "Filtros sin seleccionar, se realizará la descarga completa de datos"
+					sincriterios(key_url, alertjsonp2)
+			}
+			break
+		case "csv":
+			if (FLUJO_CONSUL == "DF_COMTRADE")
+			{
+				var alertcsv = 'El flujo completo de COMTRADE por su gran tamaño tarda aproximadamente 4-8 min. Por ello, le recomendamos:<br/>1). Regresar y aplicar criterios para filtrar la consulta.<br/>2). Si continua con la descarga completa deberá seleccionar "Guardar archivo" para posteriormente abrirlo con algun editor de archivos XML ó editores de textos, ya que el navegador web no podrá "Abrir el archivo" por su tamaño.'
+					sincriterios(key_url, alertcsv)
+			}
+			else
+			{
+				var alertcsv2 = "Filtros sin seleccionar, se realizará la descarga completa de datos"
+					sincriterios(key_url, alertcsv2)
+			}
+			break
+		case "dspl":
+			if (FLUJO_CONSUL == "DF_COMTRADE")
+			{
+				var alertdspl = 'El flujo completo de COMTRADE por su gran tamaño tarda aproximadamente 4-8 min. Por ello, le recomendamos:<br/>1). Regresar y aplicar criterios para filtrar la consulta.<br/>2). Si continua con la descarga completa deberá seleccionar "Guardar archivo" para posteriormente abrirlo con algun editor de archivos XML ó editores de textos, ya que el navegador web no podrá "Abrir el archivo" por su tamaño.'
+					sincriterios(key_url, alertdspl)
+			}
+			else
+			{
+				var alertdspl2 = "Filtros sin seleccionar, se realizará la descarga completa de datos"
+					sincriterios(key_url, alertdspl2)
+			}
+			break
+		}
+	}
+	else
+	{
+		var formato = ""
+			$('input[name=formatos]:radio').each(function (tt, ee)
+				{
+					if (ee.checked == true)
+					{
+						formato = ee.value;
+						return false;
+					}
+					else
+					{
+						return
+					}
+				}
+			);
+		switch (formato)
+		{
+		case "xml":
+			var alertxml_concriterios = "Se realizará la descarga de los datos de la siguiente URL segun los criterios seleccionados: \n" + key_url + "\n"
+				concriterios(key_url, alertxml_concriterios)
+				break
+			case "json":
+				var alertjson_concriterios = "Se realizará la descarga de los datos de la siguiente URL segun los criterios seleccionados: \n" + key_url + "\n"
+				concriterios(key_url, alertjson_concriterios)
+				break
+			case "jsonp":
+				var alertjsonp_concriterios = "Se realizará la descarga de los datos de la siguiente URL segun los criterios seleccionados: \n" + key_url + "\n"
+				concriterios(key_url, alertjsonp_concriterios)
+				break
+			case "csv":
+				var alertcsv_concriterios = "Se realizará la descarga de los datos de la siguiente URL segun los criterios seleccionados: \n" + key_url + "\n"
+				concriterios(key_url, alertcsv_concriterios)
+				break
+			case "dspl":
+				var alertdspl_concriterios = "Se realizará la descarga de los datos de la siguiente URL segun los criterios seleccionados: \n" + key_url + "\n"
+				concriterios(key_url, alertdspl_concriterios)
+				break
+		}
+	}
+}
+</script>  
+
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012--> 
+<!--Radio buttons compact y generic de informacion disponible cuando se hace clic-->
+<script type="text/javascript">
+	$(document).ready(function ()
+		{
+			$('#generic').click(function ()
+				{
+					if (FLUJO_CONSUL != null)
+					{
+						if (APLICAR_CRITERIOS != false)
+						{
+							if (document.getElementById("format_descarga") != null)
+							{
+								var spanformatdelete = document.getElementById("format_descarga")
+									var padrespanformatdelete = spanformatdelete.parentNode
+									padrespanformatdelete.removeChild(spanformatdelete);
+								document.getElementById("boton_descargarxml").checked = true
+									var spanformat = document.createElement("span")
+									spanformat.id = "format_descarga"
+									spanformat.innerHTML = "&format=generic"
+									document.getElementById("url_filtrada").appendChild(spanformat)
+							}
+							else
+							{
+								var spanformat = document.createElement("span")
+									spanformat.id = "format_descarga"
+									spanformat.innerHTML = "&format=generic"
+									document.getElementById("url_filtrada").appendChild(spanformat)
+							}
+						}
+						else
+						{
+							if (document.getElementById("format_descarga") != null)
+							{
+								var spanformatdelete = document.getElementById("format_descarga")
+									var padrespanformatdelete = spanformatdelete.parentNode
+									padrespanformatdelete.removeChild(spanformatdelete);
+								var spanformat = document.createElement("span")
+									document.getElementById("boton_descargarxml").checked = true
+									spanformat.id = "format_descarga"
+									spanformat.innerHTML = "&format=generic"
+									document.getElementById("url_filtrada").appendChild(spanformat)
+							}
+							else
+							{
+								var spanformat = document.createElement("span")
+									spanformat.id = "format_descarga"
+									spanformat.innerHTML = "&format=generic"
+									document.getElementById("url_filtrada").appendChild(spanformat)
+							}
+						}
+					}
+					else
+					{
+						alert("Seleccionar un flujo")
+					}
+				}
+			);
+			$('#compact').click(function ()
+				{
+					if (FLUJO_CONSUL != null)
+					{
+						if (APLICAR_CRITERIOS != false)
+						{
+							if (document.getElementById("format_descarga") != null)
+							{
+								var spanformatdelete = document.getElementById("format_descarga")
+									var padrespanformatdelete = spanformatdelete.parentNode
+									padrespanformatdelete.removeChild(spanformatdelete);
+								document.getElementById("boton_descargarxml").checked = true
+									var spanformat = document.createElement("span")
+									spanformat.id = "format_descarga"
+									spanformat.innerHTML = "&format=compact"
+									document.getElementById("url_filtrada").appendChild(spanformat)
+							}
+							else
+							{
+								var spanformat = document.createElement("span")
+									spanformat.id = "format_descarga"
+									spanformat.innerHTML = "&format=compact"
+									document.getElementById("url_filtrada").appendChild(spanformat)
+							}
+						}
+						else
+						{
+							$('input:radio').attr("disabled", false);
+							if (document.getElementById("format_descarga") != null)
+							{
+								var spanformatdelete = document.getElementById("format_descarga")
+									var padrespanformatdelete = spanformatdelete.parentNode
+									padrespanformatdelete.removeChild(spanformatdelete);
+								var spanformat = document.createElement("span")
+									document.getElementById("boton_descargarxml").checked = true
+									spanformat.id = "format_descarga"
+									spanformat.innerHTML = "&format=compact"
+									document.getElementById("url_filtrada").appendChild(spanformat)
+							}
+							else
+							{
+								var spanformat = document.createElement("span")
+									spanformat.id = "format_descarga"
+									spanformat.innerHTML = "&format=compact"
+									document.getElementById("url_filtrada").appendChild(spanformat)
+							}
+						}
+					}
+					else
+					{
+						alert("Seleccionar un flujo");
+					}
+				}
+			);
+		}
+	);
+</script>  
+        
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012--> 
+<!--Botones radio button(xml,json,jsonp,csv) con accion para url dinamica-->
+<script type="text/javascript">
+	$(document).ready(function ()
+		{
+			$("#boton_descargarxml").click(function ()
+				{
+					if (FLUJO_CONSUL != null)
+					{
+						if (APLICAR_CRITERIOS != false)
+						{
+							if ($('#generic').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarxml").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+							if ($('#compact').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarxml").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+						}
+						else
+						{
+							if ($('#generic').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarxml").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+							if ($('#compact').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarxml").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+						}
+					}
+					else
+					{
+						alert("Seleccionar flujo")
+					}
+				}
+			);
+			$("#boton_descargarjson").click(function ()
+				{
+					if (FLUJO_CONSUL != null)
+					{
+						if (APLICAR_CRITERIOS != false)
+						{
+							if ($('#generic').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarjson").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=json"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=json"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+							if ($('#compact').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarjson").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=json"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=json"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+						}
+						else
+						{
+							if ($('#generic').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarjson").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=json"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "format=generic&alt=json"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+							if ($('#compact').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarjson").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=json"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=json"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+						}
+					}
+					else
+					{
+						alert("Seleccionar flujo")
+					}
+				}
+			);
+			$("#boton_descargarjsonp").click(function ()
+				{
+					if (FLUJO_CONSUL != null)
+					{
+						if (APLICAR_CRITERIOS != false)
+						{
+							if ($('#generic').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarjsonp").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=json&callback=CALLBACK"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=json&callback=CALLBACK"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+							if ($('#compact').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarjsonp").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=json&callback=CALLBACK"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=json&callback=CALLBACK"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+						}
+						else
+						{
+							if ($('#generic').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarjsonp").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=json&callback=CALLBACK"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=json&callback=CALLBACK"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+							if ($('#compact').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarjsonp").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=json&callback=CALLBACK"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=json&callback=CALLBACK"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+						}
+					}
+					else
+					{
+						alert("Seleccionar flujo")
+					}
+				}
+			);
+			$("#boton_descargarcsv").click(function ()
+				{
+					if (FLUJO_CONSUL != null)
+					{
+						if (APLICAR_CRITERIOS != false)
+						{
+							if ($('#generic').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarcsv").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=csv"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=csv"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+							if ($('#compact').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarcsv").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=csv"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=csv"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+						}
+						else
+						{
+							if ($('#generic').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarcsv").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=csv"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=csv"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+							if ($('#compact').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargarcsv").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=csv"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=csv"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+						}
+					}
+					else
+					{
+						alert("Seleccionar flujo")
+					}
+				}
+			);
+			$("#boton_descargardspl").click(function ()
+				{
+					if (FLUJO_CONSUL != null)
+					{
+						if (APLICAR_CRITERIOS != false)
+						{
+							if ($('#generic').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargardspl").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=dspl"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=dspl"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+							if ($('#compact').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargardspl").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=dspl"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=dspl"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+						}
+						else
+						{
+							if ($('#generic').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargardspl").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=dspl"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=generic&alt=dspl"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+							if ($('#compact').is(':checked') == true)
+							{
+								if (document.getElementById("format_descarga") && document.getElementById("boton_descargardspl").checked == true)
+								{
+									var spanformatdelete = document.getElementById("format_descarga")
+										var padrespanformatdelete = spanformatdelete.parentNode
+										padrespanformatdelete.removeChild(spanformatdelete);
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=dspl"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+								else
+								{
+									var spanformat = document.createElement("span")
+										spanformat.id = "format_descarga"
+										spanformat.innerHTML = "&format=compact&alt=dspl"
+										document.getElementById("url_filtrada").appendChild(spanformat)
+								}
+							}
+						}
+					}
+					else
+					{
+						alert("Seleccionar flujo")
+					}
+				}
+			);
+		}
+	);
+</script>  
+        
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012--> 
+<!--Boton descargar estructura de informacion disponible-->
+<script type="text/javascript">
+	$(document).ready(function()
+		{
+			$("#boton_descargar3").click(function()
+				{
+					if (URL_DSD_CONSULTADO == null)
+						alert("No has seleccionado un flujo para descargar su estructura")
+                                        else
+						{
+							var dsd_geted = URL_DSD_CONSULTADO
+								window.open(dsd_geted + "?references=shallow")
+						}
+				});
+		});
+</script>  
+        
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012--> 
+<script type = "text/javascript" >
+	$(document).ready(function ()
+		{
+			$("#boton_descargar4").click(function ()
+				{
+					if (URL_DSD_CONSULTADO == null)
+						alert("No has seleccionado un flujo para descargar su estructura")
+                                        else
+						{
+							var dsd_geted = URL_DSD_CONSULTADO
+								window.open(dsd_geted);
+						}
+				}
+			);
+		}
+	);
+ </script>  
+        
+
+
+</head>
+<body style="margin-top: 0; margin-left: 0; margin-right: 0;">
+
+<table width="980px" cellspacing='0' cellpadding='0'>
+        
+        <tr><td>
+       
+                <table width="100%" cellspacing='0' cellpadding='0'>
+                    <tr>
+                        <td>
+<table width='100%' height='90px' border='0' cellspacing='0' cellpadding='0'>
+               
+        </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                        <table width="100%" border="0" cellpadding="0" cellspacing="0" >
+                <tr>
+                    <td width="20%" valign='top'>
+                        <table width="100%" align='left' style="height:100%" border="0" cellspacing="0" cellpadding="0" >                                    
+                            <tr>
+                                <td width="100%" >
+                                    <table width="100%" id="Tabla_general" align='left' border="0" cellspacing="0" cellpadding="0" >                
+                                        <tr>
+                                            <td align='left' width="100%" valign='top' bgcolor="#E8E8E8">
+                                                <table align='left' width="95%">
+                                                    <tr>        
+                                                        <td width='10'></td>
+                                                        <td width="163" align="center">
+                                                           
+                                                            <br /><img src="img/sdmx-logo.gif" alt="Img SDMX" width="189" height="77"><br />
+                                                        </td>
+                                                    </tr>
+                                                  
+                                                    <tr>
+                                                    <td width='10'></td>
+                                                    <td>
+                                            <table>
+                      
+                     <br />
+                     
+                         <tr>        
+                        
+                         <td colspan="3" ><!--img alt='' src='/img/Navegacion/Pob_punto.gif' border='0'/--> 
+                        <br /><strong>Información disponible</strong><br /></td>
+                         </tr> 
+                         <tr>        
+                         <td><img alt='' src='/img/Navegacion/Pob_punto.gif' border='0'/></td>
+                         <td><a href="javascript:void(0)" class='menuMT'>Flujos de datos </a></td>
+                         </tr>  
+						 <tr>        
+                        
+                         <td><img alt='' src='/img/Navegacion/Pob_punto.gif' border='0'/></td>
+                         <td><a href="javascript:void(0)" class='menuMT'>Estructuras y catálogos</a></td>
+                         </tr>
+						
+                          </table>  
+                
+                                                
+                                            </td>
+                                        </tr>                            
+                                           
+                                                </table>        
+                                            </td>
+                                        </tr>
+	                                </table>
+	                            </td> 
+	                        </tr> 
+	                        <tr>
+	                            <td width="100%" >
+	                                <table width="100%" align='left' border="0" cellspacing="0" cellpadding="0" bordercolor="blue">                
+                                        <tr height="93px" >
+                                            <td width='100%' height="93px" background='/img/fondo_resumen_compendio_baja.jpg'>&nbsp;</td>
+                                        </tr>
+                                    </table>
+                                </td> 
+                            </tr> 
+                        </table> 
+                    </td>
+                    <td valign="top" width="80%" >
+	                   	                                  
+                                    <div id='impresion'>
+                                    <table width='100%'>
+			            <tr>
+				            <td align="left" class="Titulo_proy">
+				                <!--Titulo de la presentación-->
+					            SDMX
+				            </td>
+				            <td align="right">
+					            
+				            </td>
+
+			            </tr>
+			            
+		           </table>
+                   <table width='100%'>
+			<tr>
+			  <td width='5px'></td>
+			  <td>
+                                    <!-- inician tablas id-->
+                                <table id="C1" width="100%" style="display: block;">
+                                   <tr>
+
+				                   <td height="18" class='Pob_Titulopadre'  width="20%" valign="top"> Presentaci&oacute;n
+                                 </td>
+			                     </tr>                      
+                                 <tr> 
+                                 <td height="18" width="148%" colspan="1" valign="top">
+                                   <p>&nbsp;</p>
+                                   <p style="text-align:justify">P&aacute;gina de consulta de las aplicaciones: Flujos de datos, Estructuras y catálogos.</p>
+                                                                                                             
+                                  </td>
+
+                                  </tr>
+                          </table> 
+                                 
+                                 
+                                  <!--fin tabla C1-->
+                                  
+                                  
+<table id="C5" width="100%" style="display: none;">
+                                   <tr>
+                                   <td height="18" class='Pob_Titulopadre' width="20%" valign="top"> 
+                                   <a name="Contactos INEGI" class="Padre">Flujos de datos </a>
+
+                                   </td>
+                                   </tr>                        
+                                   <tr> 
+                                    <!--Contenido de td creado por Armando Humberto Cazarin Meza-->
+                                   <!--Replicado en Ambiente de Desarrollo:07/03/2012-->
+                                   <td  width="148%" colspan="1" valign="top">
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012-->
+<script type = "text/javascript" >
+	$(document).ready(function () {
+		$("a").click(function (event) {
+			if (event.target.innerHTML == "Flujos de datos ") {
+				var ie = ""
+					jQuery.each(jQuery.browser, function (i, val) {
+						if (i == "msie") {
+							ie = i;
+							return false
+						}
+					});
+				if (ie != 'msie') {
+					URL_DSD_CONSULTADO = null;
+					DSD_CONSULTADO = null;
+					FLUJO_CONSULTADO_INFODISP = null;
+					FLUJO_CONSUL = null,
+					FLUJO_AGENCY = null;
+					URL_FIJA_FLUJO_DATOS_ALL = null;
+					APLICAR_CRITERIOS = false
+						if (document.getElementById("url_filtrada") == null) {	
+							var nm = document.getElementById("container_urlfiltrada")
+								var urlfiltradaagain = document.createElement("div")
+								urlfiltradaagain.id = "url_filtrada";
+							nm.appendChild(urlfiltradaagain);
+						} else {
+							var yy = document.getElementById("url_filtrada")
+							var padre2 = yy.parentNode;
+							padre2.removeChild(yy)
+							var nm = document.getElementById("container_urlfiltrada")
+							var urlfiltradaagain = document.createElement("div")
+							urlfiltradaagain.id = "url_filtrada";
+							nm.appendChild(urlfiltradaagain);
+						}
+						var spancreateagain = document.createElement("span")
+						spancreateagain.id = "url_base";
+                                                urlfiltradaagain.appendChild(spancreateagain)
+                                                var x = document.getElementById("tabs")
+						var padre = x.parentNode
+						padre.removeChild(x)
+						var m = document.getElementById("container")
+						var tabs = document.createElement("div")
+						tabs.id = "tabs"
+						m.appendChild(tabs)
+						var ul = document.createElement("ul")
+						tabs.appendChild(ul);
+                                                document.getElementById("boton_descargarjson").checked = false
+						document.getElementById("boton_descargarjsonp").checked = false
+						document.getElementById("boton_descargarcsv").checked = false
+						document.getElementById("generic").checked = false
+						document.getElementById("compact").checked = false
+						document.getElementById("camposelector_flujo").value = "0";
+					oculta_aparece_div('C5');
+				} else {
+					var ua = [];
+					var flag_trident = false;
+					 var version_ie=false;
+						var uatemp = navigator.userAgent;
+					ua = uatemp.split(";")
+						for (var i = 0; i < ua.length; i++) {
+							if(ua[i]==" MSIE 8.0" || ua[i]==" MSIE 9.0"){
+                                                            version_ie=true;
+                                                        }
+                                                        if (ua[i] == " Trident/5.0" || ua[i] == " Trident/5.0)" ) {
+								flag_trident = true;
+									break;
+							}
+						}
+						if (flag_trident != true && version_ie==false)
+							alert("Esta aplicación no opera en versiones de Internet Explorer 8 o anteriores por lo que, si desea acceder a ella, se sugiere descargar: \nInternet Explorer 9: \nhttp://windows.microsoft.com/es-MX/internet-explorer/downloads/ie\n\nU otro navegador:\nFirefox:\nhttp://www.mozilla.org/en-US/firefox/new/\n\nChrome:\nhttp://www.google.com.mx/chrome/index.html?hl=es&brand=CHNG&utm_source=es-hpp&utm_medium=hpp&utm_campaign=es")
+                                                else {
+								URL_DSD_CONSULTADO = null;
+								DSD_CONSULTADO = null;
+								FLUJO_CONSULTADO_INFODISP = null;
+								FLUJO_CONSUL = null,
+								FLUJO_AGENCY = null;
+								URL_FIJA_FLUJO_DATOS_ALL = null;
+								APLICAR_CRITERIOS = false
+									if (document.getElementById("url_filtrada") == null) {	
+										var nm = document.getElementById("container_urlfiltrada")
+											var urlfiltradaagain = document.createElement("div")
+											urlfiltradaagain.id = "url_filtrada";
+										nm.appendChild(urlfiltradaagain);
+									} else {
+										var yy = document.getElementById("url_filtrada")
+											var padre2 = yy.parentNode;
+										padre2.removeChild(yy)
+										var nm = document.getElementById("container_urlfiltrada")
+											var urlfiltradaagain = document.createElement("div")
+											urlfiltradaagain.id = "url_filtrada";
+										nm.appendChild(urlfiltradaagain);
+									}
+									var spancreateagain = document.createElement("span")
+									spancreateagain.id = "url_base";
+								urlfiltradaagain.appendChild(spancreateagain)
+								var x = document.getElementById("tabs")
+									var padre = x.parentNode
+									padre.removeChild(x)
+									var m = document.getElementById("container")
+									var tabs = document.createElement("div")
+									tabs.id = "tabs"
+									m.appendChild(tabs)
+									var ul = document.createElement("ul")
+									tabs.appendChild(ul);
+								document.getElementById("boton_descargarjson").checked = false
+									document.getElementById("boton_descargarjsonp").checked = false
+									document.getElementById("boton_descargarcsv").checked = false
+									document.getElementById("generic").checked = false
+									document.getElementById("compact").checked = false
+									document.getElementById("camposelector_flujo").value = "0";
+								oculta_aparece_div('C5');
+							}
+				}
+			}
+		});
+	});
+</script>
+<br />
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012-->
+
+<script type = "text/javascript" >
+	$(document).ready(function () {
+		$(function () {
+			$("#dialog_pasos").dialog({
+				autoOpen : false,
+				show : "blind",
+				hide : "explode",
+				title : "Pasos para trabajar con la aplicación"
+			});
+			$("#pasos").click(function () {
+				$("#dialog_pasos").dialog("open");
+				return false;
+			});			
+		});
+		
+	});
+</script>
+									<strong>Nota:</strong>
+                                    <a id="pasos" href="#" >Pasos para hacer uso de la aplicación</a> 
+                                    <br/>
+                                    <br/>
+                                    <center><table class="Pob_Tabla" style="width: 750px" align="center" cellspacing="0" cellpadding="0" border="0">
+                                    <tr>
+                                    <td class="TdCenso" align="center" >
+
+                                    <select id="camposelector_flujo" name="dsd" default="0">                                                                           
+                                    <option value="0">Seleccionar flujo de datos</option>
+                                    </select>
+                                    <input id="DSD" type="button" value="DSD"></input>
+                                    </td>
+                                    
+                                    <td class="TdCenso" align="center" > 
+                                    </td>
+                                    </tr>
+                                    <tr>
+
+                                    <td class="TdCenso" >
+                                    <br/>
+                                    <div id="container_urlfiltrada">
+                                    </div>
+                                    </td>
+                                    
+                                    <td class="TdCenso" align="center" >
+                                        <div style="text-align:left;"><span >Formatos SDMX:</span></div>
+                                        <input id="generic" type="radio"  name="formato_sdmx" value="generic">Generic      
+                                        <input id="compact" type="radio" name="formato_sdmx" checked value="compact">Compact
+										<br/>
+
+                                        <div >
+                                        <div style="text-align:left;"><span >Tipo de archivo:</span></div>
+                                        <input type="radio" name="formatos" id="boton_descargarxml" value="xml">XML
+                                        <input type="radio" name="formatos" id="boton_descargarjson"  value="json" >JSON                                                          
+                                        <input type="radio" name="formatos" id="boton_descargarjsonp"  value="jsonp">JSONP                                                            
+                                        <input type="radio" name="formatos" id="boton_descargarcsv"  value="csv">CSV
+                                        <input type="radio" name="formatos" id="boton_descargardspl"  value="dspl">DSPL
+                                        </div>
+										<br/>
+                                        <input type="button"  id="descargar_datos"  value="Descargar datos"/>
+                                    </td>
+
+                                    </tr>
+                                    <tr>
+                                    <td class="TdCenso" align="center" >
+                                                <input id="criteria" type="button" value="Filtrar Consulta" />
+                                                <input id="informacion_filtros" type="button" value="Instrucciones para filtrar consulta" />         
+                                    </td>
+                                        
+                                    <td class="TdCenso" align="center" >  
+                                    </td>
+                                    </tr>                                        
+                                    <tr>
+
+                                        <td align="left" class="TdCenso" colspan="4" style="width: 100%">
+                                            <div id="container" >
+                                                <div id="activity_pane">
+                                                                        <div id="tabs">
+                                                                            <ul>         
+                                                                            </ul>
+                                                                        </div>    
+                                                </div>    
+                                            </div>   
+                                        </td>
+                                    </tr>                                            
+                                    </table></center>   
+                                 
+
+                        <div id="dialog">Usando las pestañas de abajo puede especificar el criterio a ser usado para filtrar la consulta de datos.<p>Dando clic sobre algún filtro se verá reflejado el criterio en la URL que aparece arriba de las pestañas, ya que cada dimensión se representa entre los puntos que conforma la llave &quot;key=&quot;. Por ello, no es necesario entrar a las pestañas cuyo criterio se quiera como &quot;todo&quot;.</p><p>Posteriormente elija el formato SDMX y el tipo de archivo, finalmente oprima el botón para descargar los datos.</p><p>Adicionalmente si desea puede copiar la URL para utilizarla directamente desde cualquier aplicación.</p></div>
+
+                        <div id="dialog_pasos">
+                            <p>1. Seleccionar un flujo de datos.</p>
+
+<p>2. Al seleccionar el flujo de datos, tiene la opción de:<br/> 
+- Obtener su estructura (DSD) dando click en el botón DSD, el cual abrirá una ventana emergente 
+que contiene la URL que puede copiar y pegar en su navegador web para descargar la estructura, 
+así como los botones "Descargar el KeyFamily" ó "Descargar DSD".<br/> 
+- Descargar los datos de la URL que estará visualizando, la cual está conformada 
+
+de tal manera para obtener los datos completos del flujo seleccionado, elegir su formato 
+SDMX (compact o generic) y el tipo de archivo que desea obtener (XML, JSON, JSONP, CSV, DSPL).
+Asi también puede copiar la URL y pegar en su navegador web para descargar la información.</p>
+
+<p>3. Si desea acotar la consulta puede aplicar filtros a los datos, eligiendo los criterios de 
+selección en las pestañas (dimensiones) del tabulador que se mostrará dando click en el botón 
+filtrar consulta. Para mas información de como trabajar con el filtrado de la consulta, dar 
+click en el botón Instrucciones para filtrar consulta.</p>
+
+<p>4. Seleccionar el formato (compact ó generic) y descargar la consulta, seleccionando el tipo 
+de archivo deseado (XML, JSON, JSONP, CSV, DSPL).
+Asi mismo puede copiar la URL con o sin filtros para pegarla en su navegador web y descargar 
+los datos.</p>             
+                        </div>
+
+<br/>
+<br/>
+                                  </td>
+                                  </tr>
+</table> 
+									   
+		<table id="C6" width="100%" style="display: none;">
+                                  <tr>
+                                  <td height="18" class='Pob_Titulopadre'  width="20%" valign="top"> 
+                                  <a name="Importancia" class="Padre">Estructuras y catálogos </a>
+                                  </td>
+                                  </tr>                        
+                                   <tr>
+                                   <!--Contenido de td creado por Armando Humberto Cazarin Meza-->
+                                   <!--Replicado en Ambiente de Desarrollo:07/03/2012-->
+                                   <!--Modificado:16/03/2012-->
+                                   <td height="18" width="148%" colspan="1" valign="top">
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012-->
+<script type = "text/javascript" >
+	$(document).ready(function () {
+		$("a").click(function (event) {
+			if (event.target.innerHTML == "Estructuras y catálogos") {
+				var ie = ""
+					jQuery.each(jQuery.browser, function (i, val) {
+						if (i == "msie")
+							ie = i;
+						if (i == "version")
+							explorer_version = val;
+						else
+							return
+					});
+				if (ie != 'msie') {
+					if (document.getElementById("unemp_table") != null) {
+						var un = document.getElementById("unemp_table")
+							var father = un.parentNode;
+						father.removeChild(un);
+						var unemp_table_div = document.createElement("div")
+							unemp_table_div.id = "unemp_table"
+							unemp_table_div.setAttribute("style", "width:200px;margin: 2em")
+							document.getElementById("container_unemp_table").appendChild(unemp_table_div)
+							document.getElementById("camposelector3").value = "0";
+						document.getElementById("url_definida_estr").value = "";
+						oculta_aparece_div('C6');
+					} else {
+						var m = document.getElementById("impresion").getElementsByTagName("table").length;
+						var unemp_table_div = document.createElement("div")
+							unemp_table_div.id = "unemp_table"
+							unemp_table_div.setAttribute("style", "width:200px;margin: 2em")
+							document.getElementById("container_unemp_table").appendChild(unemp_table_div)
+							document.getElementById("camposelector3").value = "0";
+						document.getElementById("url_definida_estr").value = "";
+						oculta_aparece_div('C6');
+					}
+				} else {
+					var ua = [];
+					var flag_trident = false;
+					var version_ie=false;
+						var uatemp = navigator.userAgent;
+					ua = uatemp.split(";")
+						for (var i = 0; i < ua.length; i++) {
+							if(ua[i]==" MSIE 8.0" || ua[i]==" MSIE 9.0"){
+                                                            version_ie=true;
+                                                        }
+                                                        if (ua[i] == " Trident/5.0" || ua[i] == " Trident/5.0)" ) {
+								flag_trident = true;
+									break;
+							}
+						}
+						if (flag_trident != true && version_ie==false)
+							alert("Esta aplicación no opera en versiones de Internet Explorer 8 o anteriores por lo que, si desea acceder a ella, se sugiere descargar: \nInternet Explorer 9: \nhttp://windows.microsoft.com/es-MX/internet-explorer/downloads/ie\n\nU otro navegador:\nFirefox:\nhttp://www.mozilla.org/en-US/firefox/new/\n\nChrome:\nhttp://www.google.com.mx/chrome/index.html?hl=es&brand=CHNG&utm_source=es-hpp&utm_medium=hpp&utm_campaign=es")
+                                                else {
+								if (document.getElementById("unemp_table") != null) {
+									var un = document.getElementById("unemp_table")
+										var father = un.parentNode;
+									father.removeChild(un);
+									var unemp_table_div = document.createElement("div")
+										unemp_table_div.id = "unemp_table"
+										unemp_table_div.setAttribute("style", "width:200px;margin: 2em")
+										document.getElementById("container_unemp_table").appendChild(unemp_table_div)
+										document.getElementById("camposelector3").value = "0";
+									document.getElementById("url_definida_estr").value = "";
+									oculta_aparece_div('C6');
+								} else {
+									var m = document.getElementById("impresion").getElementsByTagName("table").length;
+									var unemp_table_div = document.createElement("div")
+										unemp_table_div.id = "unemp_table"
+										unemp_table_div.setAttribute("style", "width:200px;margin: 2em")
+										document.getElementById("container_unemp_table").appendChild(unemp_table_div)
+										document.getElementById("camposelector3").value = "0";
+									document.getElementById("url_definida_estr").value = "";
+									oculta_aparece_div('C6');
+								}
+							}
+				}
+			}
+		});
+	});
+</script>
+
+ <!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:09/03/2012-->                                              
+<script type = "text/javascript" >
+	$(document).ready(function () {
+		$(function () {
+			$("#dialog_pasos_struct_catalog").dialog({
+				autoOpen : false,
+				show : "blind",
+				hide : "explode",
+				title : "Pasos para trabajar con la aplicación"
+			});
+			$("#pasos_estruc_catalog").click(function () {
+				$("#dialog_pasos_struct_catalog").dialog("open");
+				return false;
+			});			
+		});
+		
+	});
+</script>
+								<br />
+								<strong>Nota:</strong>
+                                <a href="#" id="pasos_estruc_catalog">Pasos para hacer uso de la aplicación</a>
+                                <br />
+								<br />
+                                <center>
+                                <table >
+                                <tr>
+                                <td p align="center"> 
+                                        <select id="camposelector3" name="dsd" default="0">
+                                             <option value="0">Seleccionar DSD</option> 
+                                        </select>
+                                <br></br>
+                                <label style="left: 40px;bottom: 130px;position: relative"></label>                                                                                                   
+                                <textarea  style="width:352px;height: 125px;resize: none" id="url_definida_estr"  ></textarea>
+                                <br></br>
+                                </td>
+                                <td p align="center">
+                                    <input type="button" id="boton_descargar" value="Descargar KeyFamily"></input>
+                                    <br/><br/>
+                                    <input type="button" id="boton_descargar_ref" value="Descargar DSD"></input>
+                                    <br/><br/>
+                                    <input type="button" id="boton_consultardsd" value="Consultar DSD" />
+                                </td>	
+                                </tr>
+                                </table>
+                                </center>                                                               
+<!--Script creado por Armando Humberto Cazarin Meza-->
+<!--Replicado en Ambiente de Desarrollo:07/03/2012-->
+<script type="text/javascript">      
+                        $(document).ready(function() {
+$("#boton_consultardsd").click(function (){                                                                                        
+                                     if($("#camposelector3").find(':selected').val()=='0')
+{
+alert("No has seleccionado un DSD para consultar")
+           }
+           else
+           {
+                var servidor="http://www.sdmx.snieg.mx/sistemas/sdmx/"
+                var dsdselect=$("#camposelector3").attr("value");
+                insertChart( dsdselect,servidor,"unemp_table" );  
+            }
+});
+});
+</script>
+<br/>
+<br/>
+
+
+                        <div style="position:relative; bottom: 50px; width: 200px; margin: 2em" id="container_unemp_table"></div>
+                        <div id="dialog_pasos_struct_catalog">
+                            <p>Paso 1. Seleccionar un DSD.</p>
+                            
+                            <p>Paso 2. Si se desea descargar el KeyFamily o el DSD dar click en los botones correspondientes.</p>
+                            
+                            <p>Paso 3. Click en el botón Consultar DSD para visualizar la información del mismo con la referencia a sus codelist; la consulta de algunos codelist puede tardar varios minutos debido a que contienen una gran cantidad de datos, favor de esperar</p>
+                        </div>
+                                     </td>
+                                  </tr>
+</table>
+									   
+                                      
+
+                               
+                                   <table id="C9" width="100%" style="display: none;">
+                                   
+                          </table>  
+                                  <!--fin tabla C9-->
+                                  <!-- inicia tabla C10 -->
+ <table id="C10" width="100%" style="display: none;">
+                                      
+                                
+                                </table>    
+
+
+
+                                  <table id="C11" width="100%" style="display: none;">
+                                
+                            </table>
+                        </td>
+                      </tr>
+                                      </table>
+                                      </div>
+                                    </td>
+                                </tr>
+                               
+                            </table>
+                            
+                    </td></tr></table>
+                        </td>
+                    </tr>
+                    
+            </table>
+            
+        
+     
+
+</body>
+</html>

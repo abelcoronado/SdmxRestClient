@@ -1,0 +1,1135 @@
+body			 { 
+    			 background-color: #ffffff;
+				 font-family     : Arial, Helvetica, sans-serif;
+				 font-size   	 : 9pt;
+				 font-weight 	 : normal;
+				 text-decoration : none;
+				 color 		 	 : #000000}
+
+
+label, span{
+
+font-family : Arial, Helvetica, sans-serif;
+
+font-size : 9pt;
+
+color : #000000;
+
+text-decoration : none}
+
+.bnavegacionSinliga
+	{
+	font-size   	 : 8pt;
+	}
+
+
+a:Visited.bnavegacion	 {
+				 color 			 : #5b84f9; 
+				 font-size   	 : 8pt;
+				 text-decoration : none}
+				 
+a.bnavegacion,a:Visited.bnavegacion,a:Link.bnavegacion{
+               	 font-family	 : Arial, Helvetica, sans-serif;
+               	 color			 : #000000;
+               	 font-size   	 : 8pt;
+               	 text-decoration : none}
+
+a:hover.bnavegacion  	 {text-decoration : underline;
+							font-size   	 : 8pt;}
+	
+
+
+a				 {
+				 font-family	 : Arial, Helvetica, sans-serif;
+				 color			 : #000000;
+				 text-decoration : none}
+
+a:Link,a:hover	 {
+				 color 			 : #000000; 
+				 text-decoration : underline}
+
+a:Visited 		 {
+				 color 			 : #0637C8; 
+				 text-decoration : underline}
+
+a.hide		   	 {display 		 : none;}
+
+a.home,a:Link.home{
+				 font-family	 : Arial, Helvetica, sans-serif;
+				 color			 : #000000;
+				 text-decoration : none}
+
+a:hover.home     {text-decoration : underline}
+
+a:Visited.home	 {
+				 color 			 : #5b84f9; 
+				 text-decoration : none}
+				 
+a.menu,a:Visited.menu,a:Link.menu{
+               	 font-family	 : Arial, Helvetica, sans-serif;
+               	 color			 : #ffffff;
+               	 text-decoration : none}
+
+a:hover.menu   	 {text-decoration : underline}
+
+
+a.menuS,a:Visited.menuS,a:Link.menuS{
+               	 font-family	 : Arial, Helvetica, sans-serif;
+               	 color			 : #ffffff;
+               	 text-decoration : underline}
+
+a:hover.menuS   	 {text-decoration : underline;
+                	  color			 : #ffffff;}
+
+
+img    { border-style  : none }
+
+
+/* Titulo gris con barra naranja abajo */
+td.Titulo_met
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;
+	
+		border-bottom: solid 1px #FB9807;
+		 
+	}
+	
+
+	/* Titulo gris con barra naranja abajo */
+td.Titulo_met
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;
+	
+		border-bottom: solid 1px #FB9807;
+		 
+	}
+	
+a.Padre,a:Link.Padre{
+               	 font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;
+               	 text-decoration : none}
+
+a:hover.Padre   	 {text-decoration : underline}
+
+a:Visited.Padre{
+               	  font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+
+		font-weight:bold;
+               	 color			 : #5b84f9;
+               	 text-decoration : none}
+
+
+
+
+
+/*
+Creación VHZG 20090923
+************* INICIO CENSOS ECONOMICOS*************
+Prefijo: Eco
+*/
+
+/*Tabla con div de titulo padre accordeon (línea baja)*/
+.Eco_TbAccordion
+	{
+		cursor:hand;  
+		vertical-align:middle;
+		text-align:left;
+		background-repeat:repeat-x;
+		
+		vertical-align:top;
+		-moz-user-select:none;		
+	}
+
+/*Td de tabla de titulo padre (letra gris, línea baja)*/
+td.Eco_Titulopadre
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;	
+		border-bottom: solid 1px #00AACC;
+	}
+
+/*Td de tabla letra normal (línea baja)  sin estilo de letra*/
+td.Eco_linea
+	{	
+		border-bottom: solid 1px #00AACC;
+	}
+
+/*Hr (línea)*/
+hr.Eco_censo
+	{
+		width: 100%; 
+		border-style:solid 0.05px;
+		color:#00AACC;
+	}
+
+/* Para el color de fondo de las tablas de los sistemas pej, microdatos y tabulados básicos */
+table.Eco_FondoT
+{
+	background-color:#CCE7FD;
+}
+
+/*Tabla con borde de .05pt*/
+table.Eco_Tabla
+	{
+		border: #0091C8 .05pt solid;
+		padding:5;
+	}
+	
+/*Borde inferior y derecho color gris, fondo naranja claro*/
+th.Eco_Th
+{
+	border-bottom: #C8C8C8 .05pt solid;
+	border-right: #C8C8C8 .05pt solid;
+	background-color:#CCE7FD;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+
+/*Fondo color naranja claro sin bordes*/
+th.Eco_ThSinLinea
+{
+	background-color:#CCE7FD;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+
+tr.Eco_Trfondo
+{
+	background-color:#CCE7FD;
+}
+
+/************* TERMINO CENSOS ECONOMICOS*************/
+
+
+
+
+/*
+Creación VHZG 20090929
+****** INICIO CENSOS AGROPECUARIO Y EJIDAL **********
+Prefijo: Agro
+*/
+
+/*Tabla con div de titulo padre accordeon (línea baja)*/
+.Agro_TbAccordion
+	{
+		cursor:hand;  
+		vertical-align:middle;
+		text-align:left;
+		background-repeat:repeat-x;
+		
+		vertical-align:top;
+		-moz-user-select:none;		
+	}
+
+/*Td de tabla de titulo padre (letra gris, línea baja)*/
+td.Agro_Titulopadre
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;	
+		border-bottom: solid 1px #00AA55;
+	}
+
+/*Td de tabla letra normal (línea baja)  sin estilo de letra*/
+td.Agro_linea
+	{
+		border-bottom: solid 1px #00AA55;
+	}
+
+/*Hr (línea)*/
+hr.Agro_censo
+	{
+		width: 100%;
+		border-style:solid 0.05px;
+		color:#00AA55;
+	}
+
+/* Para el color de fondo de las tablas de los sistemas pej, microdatos y tabulados básicos */
+table.Agro_FondoT
+{
+	background-color:#D2F1A5;
+}
+
+/*Tabla con borde de .05pt*/
+table.Agro_Tabla
+	{
+		border: #237A2B .05pt solid;
+		padding:5;
+	}
+	
+/*Borde inferior y derecho color gris, fondo verde claro*/
+th.Agro_Th
+{
+	border-bottom: #C8C8C8 .05pt solid;
+	border-right: #C8C8C8 .05pt solid;
+	background-color:#D5F1A9;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 10pt;
+}
+
+/*Fondo color verde claro sin bordes*/
+th.Agro_ThSinLinea
+{
+	background-color:#D5F1A9;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+
+tr.Agro_Trfondo
+{
+	background-color:#D5F1A9;
+}
+
+/****** TERMINO CENSOS AGROPECUARIO Y EJIDAL **********/
+
+
+
+
+/*
+Creación VHZG 20091014
+****** INICIO CUENTAS NACIONALES **********
+Prefijo: Cue
+*/
+
+/*Tabla con div de titulo padre accordeon (línea baja)*/
+.Cue_TbAccordion
+	{
+		cursor:hand;  
+		vertical-align:middle;
+		text-align:left;
+		background-repeat:repeat-x;
+		
+		vertical-align:top;
+		-moz-user-select:none;		
+	}
+
+/*Td de tabla de titulo padre (letra gris, línea baja)*/
+td.Cue_Titulopadre
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;	
+		border-bottom: solid 1px #556B2F;
+	}
+
+/*Td de tabla letra normal (línea baja)  sin estilo de letra*/
+td.Cue_linea
+	{
+		border-bottom: solid 1px #556B2F;	
+	}
+
+/*Tabla con borde de .05pt*/
+table.Cue_Tabla
+	{
+		border: #556B2F .05pt solid;
+		cellpadding: 0;
+	}
+
+/*Hr (línea)*/
+hr.Cue_censo
+	{
+		width: 100%;
+		border-style:solid 0.05px;
+		color:#556B2F;
+	}
+
+
+/* Para el color de fondo de las tablas de los sistemas pej, microdatos y tabulados básicos */
+table.Cue_FondoT
+{
+	background-color:#EAECDF;
+}
+
+/*Borde inferior y derecho color gris, fondo naranja claro*/
+th.Cue_Th
+{
+	border-bottom: #C8C8C8 .05pt solid;
+	border-right: #C8C8C8 .05pt solid;
+	background-color:#AAB281;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+
+/*Fondo color naranja claro sin bordes*/
+th.Cue_ThSinLinea
+{
+	background-color:#AAB281;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+
+tr.Cue_Trfondo
+{
+	background-color:#AAB281;
+}
+
+/*Tabla con borde de .05pt*/
+table.CN_Tabla
+	{
+		border: #7F8642 .05pt solid;		
+		padding:5;
+	}
+/*Borde inferior y derecho color gris, fondo naranja claro*/
+th.CN_Th
+{
+	border-bottom: #C8C8C8 .05pt solid;
+	border-right: #C8C8C8 .05pt solid;
+	background-color:#AAB281;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+/****** TERMINO CUENTAS NACIONALES **********/
+
+
+
+
+
+/*Tabla con borde de .05pt*/
+table.NG_Tabla
+	{
+		border: #B87754 .05pt solid;
+	}
+
+th.NG_Th
+{
+	border-bottom: #C8C8C8 .05pt solid;
+	border-right: #C8C8C8 .05pt solid;
+	background-color:#D1A78F;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+
+
+
+
+
+
+/*Creación VHZG 2010Mar16
+************* INICIO CENTROS DE CONSULTA Y COMERCIALIZACIÓN*************
+Prefijo: Ccc
+*/
+
+/*Td de tabla de titulo padre (letra gris, línea baja)*/
+td.Ccc_Titulopadre
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;	
+		border-bottom: solid 1px #4A7EB0;
+		
+	}
+
+/*Td de tabla de subtitulo padre (letra negra, línea baja)*/
+td.Ccc_TituloNegro
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#000000;
+		font-weight:bold;	
+		border-bottom: solid 1px #4A7EB0;
+		
+	}
+
+/*Td de tabla letra normal (línea baja)  sin estilo de letra*/
+td.Ccc_linea
+	{
+	
+		border-bottom: solid 1px #4A7EB0;
+		
+	}
+
+/* Para el color de fondo de las tablas de los sistemas pej, microdatos y tabulados básicos */
+table.Ccc_FondoT
+{
+	background-color:#F5F5F5;
+}
+
+
+/************* TERMINO CENSOS ECONOMICOS*************/
+
+
+/*Vinculos de navegación*/
+a.Tnsp_link,a:Link.Tnsp_link
+	{
+               	 color:#00B2EE;
+		font-family:Century Gothic;  
+		font-size: 14px; 
+		font-weight: bold;
+               	 text-decoration : none
+	}
+
+a:hover.Tnsp_link   	 {text-decoration : underline}
+
+a:Visited.Tnsp_link
+	{
+               	
+		font-family:Century Gothic;  
+		font-size: 14px; 
+		font-weight: bold;
+               	 color			 : #5b84f9;
+        }
+
+
+td.Tnsp_Tdgris
+{
+	color:#A9A9A9;
+	font-family:Century Gothic;  
+	font-size: 12px; 
+	font-weight: bold;
+}
+
+/*Vinculos de navegación*/
+a.Tnsp_linkGray,a:Link.Tnsp_linkGray
+	{
+               	 color:#A9A9A9;
+		font-family:Century Gothic;  
+		font-size: 12px; 
+		font-weight: bold;
+               	 text-decoration : none
+	}
+
+a:hover.Tnsp_linkGray   	 {text-decoration : underline}
+
+a:Visited.Tnsp_linkGray
+	{
+               	
+		font-family:Century Gothic;  
+		font-size: 12px; 
+		font-weight: bold;
+               	 color			 : #5b84f9;
+        }
+
+
+/****** TERMINO TRANSPARENCIA **********/
+
+
+
+/*
+Creación VHZG 20100422
+************* INICIO ENCUESTAS EN HOGARES*************
+Prefijo: EncH
+*/
+
+/*Tabla con div de titulo padre accordeon (línea baja)*/
+.Pob_TbAccordion
+	{
+		cursor:hand;  
+		vertical-align:middle;
+		text-align:left;
+		background-repeat:repeat-x;
+		
+		vertical-align:top;
+		-moz-user-select:none;		
+	
+	}
+
+
+
+/*Td de tabla de titulo padre (letra gris, línea baja)*/
+td.EncH_Titulopadre
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;	
+		border-bottom: solid 1px #DF4C69;
+		
+	}
+
+/*Td de tabla de subtitulo padre (letra negra)*/
+td.EncH_TituloNegro
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#000000;
+		font-weight:bold;	
+	}
+
+/*Td de tabla letra normal (línea baja)  sin estilo de letra*/
+td.EncH_linea
+	{
+	
+		border-bottom: solid 1px #DF4C69;
+		
+	}
+
+
+/*Td de tabla letra de color y tamaño 15 (Para contador de visitas)*/
+td.EncH_Contador_Visitas
+	{
+	
+		font-size: 10pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#04662C;
+		font-weight:bold;	
+		border: #000000 .5pt solid;
+		
+	}
+
+/*Tabla con borde color negro de .05pt y fondo blanco*/
+table.EncH_TbContador_Visitas
+	{
+		border-collapse: collapse;
+		border: #000000 .5pt solid;		
+		background-color:White;
+		 
+	}
+
+
+/*Hr (línea)*/
+hr.EncH_censo
+	{
+	width: 100%; 
+	border-style:solid 0.05px;
+	color:#DF4C69;
+	}
+
+/* Para el color de fondo de las tablas de los sistemas pej, microdatos y tabulados básicos */
+table.EncH_FondoT
+{
+	background-color:#F2DBDF;
+}
+
+/*Tabla con borde de .05pt*/
+table.EncH_Tabla
+	{
+		border: #DF4C69 .05pt solid;		
+		padding:5;
+	}
+/*Borde inferior y derecho color gris, fondo naranja claro*/
+th.EncH_Th
+{
+	border-bottom: #C8C8C8 .05pt solid;
+	border-right: #C8C8C8 .05pt solid;
+	background-color:#F0D0D7;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+
+/*Fondo color naranja claro sin bordes*/
+th.EncH_ThSinLinea
+{
+	background-color:#FEE7C2;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+
+tr.EncH_Trfondo
+{
+	background-color:#F2DBDF;
+}
+
+
+
+/************* TERMINO ENCUESTAS EN HOGARES*************/
+
+
+/************* INICIA SPC*************/
+td.SPC_Titulopadre
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#FFFFFF;
+		font-weight:bold;	
+	}
+	
+/*Hr (línea)*/
+hr.SPC_censo
+	{
+	width: 100%; 
+	border-style:solid 0.05px;
+	color:ButtonShadow;
+	}
+	
+
+td.SPC_Registro
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#2dacad;
+		font-weight:bold;	
+		border-bottom: solid 1px ButtonShadow;
+		
+	}
+/************* TERMINO SPC*************/
+
+
+/************* INICIO ESTILOS GENERALES **************/
+
+
+/*Div acordeon contenedor*/
+.AccordionContent
+	{  
+		overflow:auto;
+		background-color:#FFFFFF;
+	}
+
+
+/*Td de tabla de titulo padre*/
+.Titulopadre
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;
+		cursor:hand;
+	}
+
+
+
+
+
+/*Vinculos de navegación*/
+a.menuN,a:Link.menuN
+	{
+		font-family	 : Arial;
+               	color			 : #000000;
+               	text-decoration : none;	
+	}
+					   
+a:Visited.menuN
+	{
+		font-family	 : Arial;
+		color			 : #5b84f9;
+		text-decoration: none; 
+	}
+
+a:hover.menuN
+	{
+		font-family	 : Arial;
+		text-decoration: underline; 
+	}
+
+
+a.menuNProd,a:Link.menuNProd
+	{
+		font-family	 : Arial;               
+               	text-decoration : none;	
+	}
+					   
+a:Visited.menuNProd
+	{
+		font-family	 : Arial;	
+		text-decoration: none; 
+	}
+
+a:hover.menuNProd
+	{
+		font-family	 : Arial;
+		text-decoration: underline; 
+	}
+
+
+/*Estilo de Titulo de proyecto en negritas*/
+.Titulo_proy
+	{			font-size		:17pt;
+				font-family		:Arial, Helvetica, sans-serif;
+				color			:#000000;
+				font-weight		:bold;
+	} 
+
+h3
+	{			font-size		:13pt;
+				font-family		:Arial, Helvetica, sans-serif;
+				color			:#000000;
+				font-weight		:bold;
+	}
+	
+h4
+	{			font-size		:11pt;
+				font-family		:Arial, Helvetica, sans-serif;
+				color			:#000000;
+				font-weight		:bold;
+	} 
+	
+b
+	{			font-size		:9pt;
+				font-family		:Arial, Helvetica, sans-serif;
+				font-weight		:bold;
+	} 
+/*Td de table estilo de Titulo de tema en gris*/
+td.Titulo_tema
+	{			font-size		:13pt;
+				font-family		:Arial, Helvetica, sans-serif;
+				color			:#A9A9A9;
+				font-weight		:bold;
+	} 
+
+
+a.TituloNavegacion,a:Link.TituloNavegacion{
+				 font-family	 : Arial, Helvetica, sans-serif;
+				 font-size		 : 13pt;
+				 color			 :#A9A9A9;
+				 text-decoration : none}
+
+a:hover.TituloNavegacion     {text-decoration : underline}
+
+a:Visited.TituloNavegacion	 {
+				 color 			 : #5b84f9; 
+				 }
+/*Td de table estilo para hijos en navegación con mas hijos*/
+td.tema_hijos_nav
+	{			 background-color: #ffffff;
+				 font-family     : Arial, Helvetica, sans-serif;
+				 font-size   	 : 9pt;
+				 font-weight 	 : normal;
+				 text-decoration : none;
+				 color 		 	 : #000000;
+				 cursor			 :hand;
+	} 
+
+
+/*Estilo para subtítulos de tablas. Fondo gris claro, linea gis más obscuro*/
+td.TdSubtitulo
+{
+	background-color: #EFEFEF;
+	border-right: #CDCDCD .05pt solid;
+	border-bottom: #CDCDCD .05pt solid;
+	vertical-align: middle;
+}
+
+td.TdGris
+{
+	color:#f5f5f5;
+	font-family:Century Gothic;  
+	font-size: 12px; 
+	font-weight: bold;
+}
+
+
+/* Se pintan las lineas de la tabla en color gris */
+td.Td_Borde
+ {
+	border-right: #CDCDCD .05pt solid;
+	border-bottom: #CDCDCD .05pt solid;
+	padding: 3px;
+ }
+
+td.TdCenso
+ {
+	border-right: #CDCDCD .05pt solid;
+	border-bottom: #CDCDCD .05pt solid;
+	padding: 3px;
+	font-size: 10pt;
+ }
+ 
+ TableRow.TdCenso
+ {
+	border-right: #CDCDCD .05pt solid;
+	border-bottom: #CDCDCD .05pt solid;
+	padding: 3px;
+ }
+ 
+/*Td de tabla de titulo padre*/
+
+
+
+
+
+
+.LetraBlanca
+{
+	font-color:#FFFFFF;
+	
+}
+ 
+
+
+
+a.LigaNN
+{
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:underline
+}
+ 
+/************* TERMINO ESTILOS GENERALES **************/
+
+
+
+.oculta {display: none;}
+.imprimible {display: block;}
+.icon, .AccordionTitle, .AccordionPrincipalTitle, .AccordionContent, .AccordionContainer, .Pob_TbAccordion
+{
+  position:relative;
+  width:100%;
+}
+
+
+
+
+.icon, .AccordionTitle
+{
+  cursor:hand;
+
+  
+  vertical-align:middle;
+  text-align:left;
+  background-repeat:repeat-x;
+  
+  vertical-align:top;
+  -moz-user-select:none;
+		/*border-bottom: solid 1px #C1C1C1;*/
+border-bottom: solid 1px #FB9807;
+
+
+}
+
+
+	
+.Titulo_proy2
+	{			font-size		:15pt;
+				font-family		:Arial, Helvetica, sans-serif;
+				color			:#000000;
+				font-weight		:bold;
+	} 
+
+	
+
+	
+	
+	td.Titulo_met
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;
+	
+		border-bottom: solid 1px #FB9807;
+		 
+	}
+.AccordionPrincipalTitle
+{
+  height:20px;
+  overflow:hidden;
+  cursor:default;
+  font-family:Arial Black;
+  font-size:10pt;
+
+  vertical-align:middle;
+  text-align:center;
+  background-repeat:repeat-x;
+  
+  background-image:url('title_repeater.jpg');
+  -moz-user-select:none;
+  border-bottom: solid 1px #C1C1C1;
+ background-color:#F2F2F2;
+}
+
+
+
+
+a.Padre,a:Link.Padre{
+               	 font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;
+               	 text-decoration : none}
+
+a:hover.Padre   	 {text-decoration : underline}
+
+a:Visited.Padre{
+               	  font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+
+		font-weight:bold;
+               	 color			 : #5b84f9;
+               	 text-decoration : none}
+
+
+
+
+
+.AccordionTitle2
+{
+  
+
+cursor:hand;
+  
+  
+  color: Green;
+
+
+
+
+
+}
+
+
+H2
+{
+	font-size: 13pt;
+	font-family: Arial, Helvetica, sans-serif;   
+	color:#A9A9A9;
+	font-weight:bold;
+
+}
+
+.H1
+{
+	font-size: 13pt;
+	font-family: Arial, Helvetica, sans-serif;   
+	color:#000000;
+	font-weight:bold;
+}
+
+
+
+fieldset
+{padding: 0 0 0 0;}
+
+td.Titulo_gris
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;
+	
+		border-bottom: solid 1px #999999;
+		 
+	}
+
+
+<!-- ESTILOS SOLICITADOS POR ALFREDO SOSA PARA LA BIBLIOTECA 17/SEP/09 -->
+<!-- Indicará el titulo general un punto más grande que el td normatl. Ejemplo: centros de consulta y bibliotecas asociadas-->
+.TituloCC
+{ 
+	background-color: #ffffff;
+        font-family     : Arial, Helvetica, sans-serif;
+        font-size       : 10pt;
+        font-weight     : Bold;
+        text-decoration : none;
+        color                                     : #000000
+}
+
+<!-- son 2 estados diferentes, sin pasar el raton y pasando el raton sobre la liga. Indicará el titulo individual de los centros de consulta y las bibliotecas asociadas, está en Negritas y sin vinculo -->
+a.LigaTituloCCyB
+	{
+		background-color: #ffffff;
+                font-family        :  Arial, Helvetica, sans-serif;
+                font-size             : 10pt;
+                font-weight       : bold;
+                text-decoration :none;
+                color                     : #000000
+	}
+
+a:hover.LigaTituloCCyB 
+	{ 
+        	background-color: #ffffff;
+                font-family     : Arial, Helvetica, sans-serif;
+                font-size             : 10pt;
+                font-weight       : normal;
+                text-decoration : underline;
+                color                                     : #000000
+	}
+
+hr.censo
+{
+	width: 100%; 
+	border-style:solid 0.05px;
+	color:#FB9807;
+}
+
+/*Td de tabla (línea baja gris)  sin estilo de letra*/
+td.linea_td
+	{
+	
+		border-bottom: solid 1px #696969;
+	}
+
+
+/*Td de tabla de titulo padre (letra gris, línea gris baja)*/
+td.Titulopadre_linea
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;	
+		border-bottom: solid 1px #C1C1C1;
+		
+	}
+
+a.menu,a:Visited.menu,a:Link.menu{
+               	 font-family	 : Arial, Helvetica, sans-serif;
+               	 color			 : #ffffff;
+               	 text-decoration : none}
+
+a:hover.menu   	 {text-decoration : underline}
+
+a.menup,a:Visited.menup,a:Link.menup{
+               	 font-family	 : Verdana;
+               	 font-weight	 : Bold;
+               	 color			 : #ffffff;
+               	 text-decoration : none}
+
+
+/* Estilos para popups*/
+/*Modal Popup*/
+.modalBackground {
+      background-color:Gray;
+      filter:alpha(opacity=70);
+      opacity:0.7;
+}
+
+.modalPopup {
+      background-color:#ffffff;
+      border-width:3px;
+      border-style:solid;
+      border-color:Gray;
+      padding:3px;
+      width:250px;
+}
+
+
+/*Popup Control*/
+.popupControl{
+      background-color:White;
+      position:absolute;
+      visibility:hidden;
+}
+
+
+/*Título para publicaciones y productos*/
+td.ProdServ_TituloCafe
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;
+		color:#D0B98B;
+		font-weight:bold;
+		text-decoration:underline;
+	}
+
+a.ProdServ_LigaCafe,a:Link.ProdServ_LigaCafe,a:hover.ProdServ_LigaCafe,a:Visited.ProdServ_LigaCafe{
+				 font-family	 : Arial, Helvetica, sans-serif;
+				 color			 : #C5A86D;
+				 text-decoration : underline}
+
+ProdServ_Fondo
+{
+	color:#D0B98B;
+}
+
+				 

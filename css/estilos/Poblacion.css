@@ -1,0 +1,112 @@
+body {
+}
+
+/*
+Creación VHZG 20090923
+
+************* INICIO POBLCACION Y VIVIENDA*************
+Prefijo: pob
+*/
+
+/*Tabla con div de titulo padre accordeon (línea baja)*/
+.Pob_TbAccordion
+	{
+		cursor:hand;  
+		vertical-align:middle;
+		text-align:left;
+		background-repeat:repeat-x;
+		
+		vertical-align:top;
+		-moz-user-select:none;		
+	}
+
+/*Td de tabla de titulo padre (letra gris, línea baja)*/
+td.Pob_Titulopadre
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;	
+		border-bottom: solid 1px #FB9807;
+	}
+
+/*Td de tabla de subtitulo padre (letra negra)*/
+td.Pob_TituloNegro
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#000000;
+		font-weight:bold;	
+	}
+
+/*Td de tabla letra normal (línea baja)  sin estilo de letra*/
+td.Pob_linea
+	{
+		border-bottom: solid 1px #FB9807;
+	}
+
+/*Td de tabla letra de color y tamaño 15 (Para contador de visitas)*/
+td.Pob_Contador_Visitas
+	{
+		font-size: 10pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#04662C;
+		font-weight:bold;	
+		border: #000000 .5pt solid;
+	}
+
+/*Tabla con borde color negro de .05pt y fondo blanco*/
+table.Pob_TbContador_Visitas
+	{
+		border-collapse: collapse;
+		border: #000000 .5pt solid;		
+		background-color:White; 
+	}
+
+/*Hr (línea)*/
+hr.Pob_censo
+	{
+		width: 100%; 
+		border-style:solid 0.05px;
+		color:#FB9807;
+	}
+
+/* Para el color de fondo de las tablas de los sistemas pej, microdatos y tabulados básicos */
+table.Pob_FondoT
+{
+	background-color:#FEDFB1;
+}
+
+/*Tabla con borde de .05pt*/
+table.Pob_Tabla
+	{
+		border: #FB9807 .05pt solid;		
+		padding:5;
+	}
+	
+/*Borde inferior y derecho color gris, fondo naranja claro*/
+th.Pob_Th
+{
+	border-bottom: #C8C8C8 .05pt solid;
+	border-right: #C8C8C8 .05pt solid;
+	background-color:#FEE7C2;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 10pt;
+}
+
+/*Fondo color naranja claro sin bordes*/
+th.Pob_ThSinLinea
+{
+	background-color:#FEE7C2;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+
+tr.Pob_Trfondo
+{
+	background-color:#FEE7C2;
+}
+
+/************* TERMINO POBLCACION Y VIVIENDA*************/

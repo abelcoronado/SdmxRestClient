@@ -1,0 +1,176 @@
+body{ 
+ background-color: #ffffff;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 9pt;
+ font-weight: normal;
+ text-decoration: none;
+ color: #000000;}
+/*Vinculos de navegación*/
+a.LigaEnc,a:Link.LigaEnc{
+ font-family: Arial;
+ color: #666666;
+ text-decoration: none;	
+ font-weight: bold;}	   
+a:Visited.LigaEnc{
+ font-family: Arial;
+ /*color: #5b84f9;*/
+ color: #666666;
+ text-decoration: none; 
+ font-weight: bold;}
+a:hover.LigaEnc{
+ font-family: Arial;
+ text-decoration: underline; 
+ font-weight: bold;}
+ a.SinLigaEnc{
+ font-family: Arial;
+ color: #666666;
+ text-decoration: none;	
+ font-weight: bold;}	   
+table.Tabla_enc{
+ border-bottom:2px solid #999999;}
+table.TablaFondoGris{
+ background-color:#d5d5d5;}
+.bot{
+ background:url('/img/home/v2/bot_ir.gif') no-repeat; 
+ border:none; 
+ width:18px; 
+ height:18px}
+.botEng{
+ background:url('/img/home/bot_search.gif') no-repeat; 
+ border:none; 
+ width:60px; 
+ height:18px}
+td.Menu_P_Est{
+ /*background-color:#F0F0F0;*/
+ background:url('/img/home/V2/bot_estadistica.gif') no-repeat;;
+ cursor:default;
+ font-size: 12px;  
+ font-family:Arial;
+ font-weight: bold;  
+ color: #FFFFFF;}
+td.Menu_P_Geo{
+ background:url('/img/home/V2/bot_geografia.gif') no-repeat;;
+ cursor:default;	          
+ font-size: 12px;  
+ font-family:Arial;
+ font-weight: bold;  
+ color: #FFFFFF;}
+td.MenuSelProdServ{
+ background:url('/img/home/V2/bot_productosservicios.gif') no-repeat;;
+ cursor:default;
+ font-size: 12px;  
+ font-family:Arial;
+ font-weight: bold;  
+ color: #FFFFFF;}
+td.MenuSelAcerca{
+ background:url('/img/home/V2/bot_acercaINEGI.gif') no-repeat;
+ cursor:default;}
+td.MenuSelAbout{
+ background:url('/img/home/bot_aboutINEGI1.gif') no-repeat;;
+ cursor:default;}
+td:hover.MenuSelAbout{
+ background:url('/img/home/bot_aboutINEGI2.gif') no-repeat;;
+ cursor:default;}
+/*Vinculos de pestañas*/
+a.Menu_opc_vinculo,a:Link.Menu_opc_vinculo{
+ font-size: 12px;
+ font-family: Arial;
+ color: #666666;  
+ font-weight: bold; 
+ text-decoration: none;}
+a:Visited.Menu_opc_vinculo{
+ font-size: 12px;
+ color: #666666;  
+ font-family: Arial;	
+ font-weight: bold; 	
+ text-decoration: none;}
+a:hover.Menu_opc_vinculo{
+ font-size: 12px;	    
+ font-family: Arial;
+ font-weight: bold; 
+ text-decoration: none;}
+Submenu_itemsel{
+ background-color:#f6c682;}
+td.Submenu_opc_Est{ }
+td:hover.Submenu_opc_Est{
+ /*background-color:#F5DBB8;*/
+ background-color:#f6c682;}
+td.titcol{
+ color:#FFFFFF;}
+td.Submenu_opc_Geo{ }
+td:hover.Submenu_opc_Geo{
+ /*background-color:#D1EBCA;*/
+ background-color:#47b5b1;}
+td.Submenu_opc_ProdServ{
+ color:#FFFFFF;
+ font-weight:normal;}
+td:hover.Submenu_opc_ProdServ{
+ background-color:#EDDA82;        
+ color:#FFFFFF;
+ font-weight:normal;}
+td.Submenu_opc_Acerca{ }
+td:hover.Submenu_opc_Acerca{
+ /*background-color:#D1EBCA;*/
+ background-color:#4a8ab8;}
+table.Menu_sup_Est{
+ /*border:1px solid #EFAE51;
+ background-color:#FFF6E4;*/
+ border:1px solid #002a5c;
+ background-color:#002a5c;}
+table.Menu_sup_Geo{
+ /*border:1px solid #A4D78D;
+ background-color:#E6F7E4;*/
+ border:1px solid #008480;
+ background-color:#008480;}
+table.Menu_sup_ProdServ{        
+ border:1px solid #cc9900;
+ background-color:#cc9900;}
+table.Menu_sup_Acerca{
+ /*border:1px solid #A4D78D;
+ background-color:#E6F7E4;*/
+ border:1px solid #336699;
+ background-color:#336699;}
+td.Menu_sup{   
+ background-color:#F0F0F0;}
+/*Vinculos de pestañas*/
+a.Linksubmenu,a:Link.Linksubmenu{
+ font-family: Arial;
+ /*color: #000000;*/
+ color: #FFFFFF;
+ text-decoration: none;	
+ font-weight:normal;}
+a:Visited.Linksubmenu{
+ font-family: Arial;
+ /*color: #000000;*/
+ color: #FFFFFF;
+ text-decoration: none; 
+ font-weight:normal;}
+a:hover.Linksubmenu{
+ font-family: Arial;
+ text-decoration: none; 
+ font-weight:normal;}
+a.menuP,a:Link.menuP{
+ font-family: Arial;
+ color: #000000;               	
+ text-decoration: none;}
+a:Visited.menuP{
+ font-family: Arial;
+ color: #000000;               	
+ text-decoration: none;}
+a:hover.menuP{
+ font-family: Arial;
+ text-decoration: none;}
+.bnavegacionSinliga{
+ font-size: 8pt;}
+a:Visited.bnavegacion{
+ color: #5b84f9; 
+ font-size: 8pt;
+ text-decoration: none}				 
+a.bnavegacion,a:Visited.bnavegacion,a:Link.bnavegacion{
+ font-family: Arial, Helvetica, sans-serif;
+ color: #000000;
+ font-size: 8pt;
+ text-decoration: none}
+a:hover.bnavegacion{
+ text-decoration: underline;
+ font-size: 8pt;}

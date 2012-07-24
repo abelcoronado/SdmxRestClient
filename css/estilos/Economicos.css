@@ -1,0 +1,84 @@
+body {
+}
+
+/*
+Creación VHZG 20090923
+************* INICIO CENSOS ECONOMICOS*************
+Prefijo: Eco
+*/
+
+/*Tabla con div de titulo padre accordeon (línea baja)*/
+.Eco_TbAccordion
+	{
+		cursor:hand;  
+		vertical-align:middle;
+		text-align:left;
+		background-repeat:repeat-x;
+		
+		vertical-align:top;
+		-moz-user-select:none;		
+	}
+
+/*Td de tabla de titulo padre (letra gris, línea baja)*/
+td.Eco_Titulopadre
+	{
+		font-size: 13pt;
+		font-family: Arial, Helvetica, sans-serif;   
+		color:#A9A9A9;
+		font-weight:bold;	
+		border-bottom: solid 1px #00AACC;
+	}
+
+/*Td de tabla letra normal (línea baja)  sin estilo de letra*/
+td.Eco_linea
+	{	
+		border-bottom: solid 1px #00AACC;
+	}
+
+/*Hr (línea)*/
+hr.Eco_censo
+	{
+		width: 100%; 
+		border-style:solid 0.05px;
+		color:#00AACC;
+	}
+
+/* Para el color de fondo de las tablas de los sistemas pej, microdatos y tabulados básicos */
+table.Eco_FondoT
+{
+	background-color:#CCE7FD;
+}
+
+/*Tabla con borde de .05pt*/
+table.Eco_Tabla
+	{
+		border: #0091C8 .05pt solid;
+		padding:5;
+	}
+	
+/*Borde inferior y derecho color gris, fondo naranja claro*/
+th.Eco_Th
+{
+	border-bottom: #C8C8C8 .05pt solid;
+	border-right: #C8C8C8 .05pt solid;
+	background-color:#CCE7FD;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+
+/*Fondo color naranja claro sin bordes*/
+th.Eco_ThSinLinea
+{
+	background-color:#CCE7FD;
+	vertical-align: middle;
+	text-align: center;
+	font-size 	     : 10pt;
+}
+
+tr.Eco_Trfondo
+{
+	background-color:#CCE7FD;
+}
+
+/************* TERMINO CENSOS ECONOMICOS*************/
